@@ -1,0 +1,434 @@
+---
+title: Tracking motivation and emotion on simulated conversations
+subtitle: EAAI Submission
+author: "Benjamin Lira and Stefania Druga"
+abstract: Effective human tutors excel in diagnosing students' content knowledge and recognizing and responding to their motivational and emotional states. Psychological research has long established the importance of these affective states for learning. Our study aims to explore the design of AI tutors that could infer a student's motivation and focus when providing personalized instruction. Using the Eedi public dataset, we extract common mathematics questions that middle school students need to answer and simulate conversations they might have with an AI tutor that could help them find the correct answer. We employ these simulated conversations to infer a student's motivational state. We then design a new recommender system that will use the inferred emotional state of the student when suggesting the next appropriate instructional step, which could be a more simple question, a reframing exercise, or the involvement of a trusted adult to support a young student's self-regulation. We find that training a custom language model to detect student motivational state could effectively integrate socio-emotional learning signals in existing recommendation systems used for AI tutors. We propose modeling students' motivational state will provide learning benefits in the short and long term, compared with a baseline of only tracing a student's knowledge.
+code-fold: true
+---
+
+# Next steps
+
+1. Download data
+2. Use data to simulate conversations between tutor and student.
+3. Use simulated conversations to identify motivational states.
+4. Simulate learning outcomes based on motivational states.
+
+# Data 
+Data comes from the Eedi dataset, which contains 1.5 million interactions between students and tutors. The data is available [here](https://eedi.com/projects/neurips-education-challenge)
+
+Here's a quick look at the data.
+
+**We 948 graphical questions. See an example below**
+
+```{r question_image}
+knitr::include_graphics("data/eedi/images/945.jpg")
+```
+
+**Here's what the training data looks like. **
+
+```{r train_data}
+#| message: false
+library(gt)
+read_csv("data/eedi/train_data/train_task_1_2.csv") %>% head %>% gt() %>% tab_header(title = "Training data: Task 1 and 2")
+train_data = read_csv("data/eedi/train_data/train_task_3_4.csv") 
+train_data %>% head %>% gt() %>% tab_header(title = "Training data: Task 3 and 4")
+```
+
+For each of these, we can know what the question is about:
+
+```{r question_metadata}
+#| message: false
+question_metadata = read_csv("data/eedi/metadata/question_metadata_task_1_2.csv") 
+question_metadata %>% 
+  head() %>%
+  gt() %>% 
+  tab_header(title = "Question Metadata")
+```
+
+And we can map these codes back to subjects:
+
+```{r subject_metadata}
+#| message: false
+subject_metadata = read_csv("data/eedi/metadata/subject_metadata.csv") 
+subject_metadata %>% 
+  head() %>%
+  gt() %>% 
+  tab_header(title = "Subject Metadata")
+```
+
+We have metadata for the students:
+```{r student_metadata}
+#| message: false   
+student_metadata = read_csv("data/eedi/metadata/student_metadata_task_3_4.csv") 
+student_metadata %>% 
+  head() %>%
+  gt() %>% 
+  tab_header(title = "Student Metadata")
+```
+
+... and the answer, which includes a confidence score.
+  
+```{r answer_metadata}
+#| message: false
+answer_metadata = read_csv("data/eedi/metadata/answer_metadata_task_3_4.csv")
+answer_metadata %>% 
+  head() %>%
+  gt() %>% 
+  tab_header(title = "Answer Metadata")
+
+answer_metadata %>% count(is.na(Confidence)) %>% mutate(prop = n/sum(n))
+```
+
+It seems to me that to generate conversations, we can use the following procedure:
+
+1. convert the jpg to text using OCR
+2. use the question text, student metadata, prior sequence of quesitons, and confidence to generate a tutoring conversation.
+3. Go from there.
+
+# Extracting metadata for simulating conversaitons.
+
+Let's work through an example, say the 1000th row in the data.
+```{r 1000th_row}
+train_data %>% slice(1000) %>% gt()
+```
+
+This person saw the question below, and answered C (3), the correct response.
+
+```{r 1000th_question}
+knitr::include_graphics("data/eedi/images/533.jpg")
+```
+
+Let's try to get the text out of the question see `ocr.py` for the code.
+
+
+What belongs in the spaces?\n\nt 2 ? 3)\n4\n\n
+
+
+Here's what we know about that student: No age info, and gender 0
+```{r user_information}
+student_metadata %>% filter(UserId == 2918) %>% gt()
+```
+
+Here's what we know about the answer and its confidence: Not much!
+```{r answer_information}
+answer_metadata %>% filter(AnswerId == 723667) %>% gt()
+```
+
+What was the question about?
+```{r question_information}
+question_metadata %>% filter(QuestionId == 533) %>% 
+  pull(SubjectId) %>% 
+  # get numbers
+  str_extract_all("[0-9]+", simplify = TRUE) %>% 
+  as.numeric() %>%
+  enframe() %>% 
+  left_join(subject_metadata, by = c("value" = "SubjectId")) %>% 
+  gt()
+
+```
+
+And here is what we know from that student's sequence: That student, in that session got the first question right, the second one wrong, and then tackled the question we are talking about now.
+
+```{r sequence_information}
+train_data %>% filter(UserId == 2918) %>% 
+  left_join(question_metadata, by = c("QuestionId" = "QuestionId")) %>% 
+  left_join(answer_metadata, by = c("AnswerId" = "AnswerId")) %>%
+  arrange(DateAnswered) %>%
+  filter(QuizId == 37) %>%
+  gt() %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "lightblue")
+    ),
+    locations = cells_body(
+      rows = c(QuestionId == 533)
+    )
+  ) %>%
+  tab_header(title = "Sequence of questions")
+```
+
+# Simulating conversations
+I started generating some conversations using chatGPT using the following prompt:
+
+To get more diversity, I am pulling other psychological characteristics from hypothetical distributions.
+
+> You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+> 
+> Question text: 'What belongs in the spaces?\n\nt 2 ? 3)\n4\n\n'
+> Did the student get the question right? Yes
+> What was the student's confidence? Unknown
+> What was the sequence of student work: correct, incorrect, {now}
+> Student age: Unknown - (we can pull from the distribution if Unknown)
+> Student gender: Unknown
+> Student IQ: .75
+> Student Extraversion: .23
+> Student Agreeableness: -.53
+> Student Conscientiousness: .63
+> Student Neuroticism: 1.2
+> Student Openness: .03
+
+This produced the following interaction:
+
+> **Student (S):** I'm working on this question: "What belongs in the spaces?\n\nt 2 ? 3)\n4\n\n". I initially thought I had the right answer, but I made a mistake in my second attempt. Can you help me figure it out?
+> 
+> **Intelligent Tutor (IT):** Of course! I see you've had a go at it, which is excellent. Can you share your thought process on how you approached it the first time and what changed in your second attempt?
+> 
+> **S:** In my first approach, I tried breaking down the equation, but in my second attempt, I second-guessed myself and tried another method which didn't work out.
+> 
+> **IT:** It's completely normal to second-guess oneself, especially when faced with challenging problems. For this equation, I'd suggest we go step-by-step. Can you try to articulate the problem, just like you did in your first attempt?
+> 
+> **S:** Okay, it seems like the equation is something like "t plus 2 times something minus 3 equals 4." So, I'm trying to find that unknown value.
+> 
+> **IT:** That's right! Let's use that framework to solve the problem. Remember, sometimes the simplest approach can be the correct one.
+> 
+> **S:** I think I get it now, but I still feel a bit unsure about my answers sometimes. I wish I was more confident in my abilities.
+> 
+> **IT:** Many students feel that way. It's essential to remember that everyone learns at their own pace, and making mistakes is a part of the learning process. It's more important to understand the concept than to always get the right answer the first time. If you ever feel uncertain about an answer, it's always a good idea to revisit the fundamentals of the topic. Would you like some additional resources or practice problems on writing and simplifying expressions?
+> 
+> **S:** Yes, that would be helpful. I think more practice might make me feel more confident.
+> 
+> **IT:** Absolutely! Practice can enhance your understanding and boost your confidence. Remember, every challenge you face in learning is an opportunity for growth. And I'm here to help guide you through any difficulties you encounter. Let's keep going!
+
+We can deploy this at scale using the API. Here's a script that generates conversations.
+
+```python
+Code to be written.
+```
+
+From running this, we create a dataset, which we can use to identify motivational states. See `data/conversations.jsonl` for the resulting dataset.
+
+# Identifying motivational states
+We can use the dataset to identify motivational states. We can use the following code to identify the most common motivational states.
+
+There are a few ways in which we can go about this. Perhaps the simplest but most expensive one is to have chatGPT read the conversations and score them.
+
+Take the following prompt:
+
+> You are a classroom observer. You will read a conversation between a student and an intelligent tutoring system. Please score the student on the following motivational states on a scale from 0 - 100:
+>
+> Confidence: How confident is the student in their ability to solve the problem?
+> Frustration: How frustrated is the student with their learning experience?
+> Boredom: How bored is the student with their learning experience?
+> Curiosity/Interest: How interested/curious is the student about the topic?
+> Engagement: How engaged is the student with the learning experience?
+>
+> Conversation: {conversation}
+
+Produces the following output
+
+> Based on the conversation, here's how I would score the student on the given motivational states (on a scale from 0 - 100):
+> 
+> **Confidence:**
+> 60 - The student does show some understanding of the problem and articulates their thought process, but they also express a wish for more confidence in their abilities. The score isn't extremely low because they did have an initial correct attempt and were willing to articulate their approach.
+>
+> **Frustration:**
+> 40 - The student isn't overtly frustrated but does exhibit signs of being somewhat frustrated as they mention second-guessing themselves and feeling unsure about their answers.
+> 
+> **Boredom:**
+> 10 - The student doesn't seem to display signs of boredom. They are actively participating in the conversation and seeking help, which suggests they are somewhat invested in understanding the material.
+> 
+> **Curiosity/Interest:**
+> 70 - The student is actively engaging in the conversation, asking for help, and expressing a desire for more practice and resources, indicating a decent level of curiosity and interest in the topic.
+> 
+> **Engagement:**
+> 85 - The student is very engaged in the learning experience. They discuss their thought process, attempt to solve the problem with guidance, and express a desire for further resources and practice.
+> 
+> These scores are based on the specific conversation provided and are subjective to interpretation. Different observers might score the conversation slightly differently based on their own perceptions and experiences.
+
+```python
+again, to be written, but we can easily use API to scale this up.
+```
+
+Another option is using a classifier to identify the motivational states. We can use the following code to train a classifier.
+
+```python
+I have a code base to go from a dataset of annotated conversations to a BERT model to classify motivational states.
+```
+
+A final option is to use semantic similarity to find motivational states.
+
+```python
+import sentence_transformers
+from sentence_transformers import SentenceTransformer, util
+import numpy as np
+import pandas as pd
+
+# Load the model
+model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+
+# Read the data
+conversation = open("data/conversation.txt", "r").read()
+
+# Split the conversation into utterances
+utterances = conversation.split("\n")
+student_utterances = utterances[1::2]
+
+student_utterances = [s.replace("S: ", "").replace("Student (S): ", "") for s in student_utterances]
+
+# Compute embeddings
+model.encode(student_utterances)
+
+# target embedding
+confidence = "I'm sure I can solve this problem on my own."
+frustration = "I've tried solving this problem so many times, but I just can't get the right answer. I don't know what I'm doing wrong!"
+boredom = "This topic doesn't interest me at all. I've seen it so many times before, and it just feels repetitive."
+curiosity = "I'm intrigued by this concept. Can you recommend any additional resources or examples to explore it further?"
+engagement = "I'd love to dive deeper into this topic and understand the underlying principles. Can we discuss it in more detail?"
+
+# embed them
+confidence_embedding = model.encode(confidence)
+frustration_embedding = model.encode(frustration)
+boredom_embedding = model.encode(boredom)
+curiosity_embedding = model.encode(curiosity)
+engagement_embedding = model.encode(engagement)
+
+# compute similarity between student utterances and target embeddings
+confidence_similarity = util.pytorch_cos_sim(model.encode(student_utterances), confidence_embedding)
+frustration_similarity = util.pytorch_cos_sim(model.encode(student_utterances), frustration_embedding)
+boredom_similarity = util.pytorch_cos_sim(model.encode(student_utterances), boredom_embedding)
+curiosity_similarity = util.pytorch_cos_sim(model.encode(student_utterances), curiosity_embedding)
+engagement_similarity = util.pytorch_cos_sim(model.encode(student_utterances), engagement_embedding)
+```
+
+We can track the similarity of student language to our target embeddings for each utterance. We can average them over time, or weigh the more recent ones more heavily. See graph below for the resulting similarity over time, for each motivational state. We can refine the target embeddings, and compute over a sample of them, rather than a single one for each state.
+
+```{r}
+knitr::include_graphics("output/pilot/embedding similarity.png")
+```
+
+# Simulating learning outcomes
+We can simulate learning outcomes by using a reinforcement learning framework with some assumptions, and then simulate a range of learning outcomes.
+
+We can use the following system to simulate how a motivationally aware tutor guides student's learning, compared to a baseline.
+
+## Assumptions
+1. All learning happens about a single skill
+2. For simplicity, there is no forgetting (we could add this)
+3. Motivation influences a student's engagement decisions.
+4. The ITS can influence a student's motivation.
+5. There is measurement error $e$ when measuring student's motivation from their conversation.
+
+## Definitions
+1. **Student Skill ($S$):** A continuous quantity representing the student's current skill level.
+2. **Activity Difficulty ($D$):** A continuous quantity representing how challenging an activity is.
+3. **Motivational State ($M$):** A continuous quantity representing the student's current motivation.
+4. **Engagement Decision ($E$):** A set of possible choices ${try, guess, quit}$.
+5. **Learning Outcome ($L$):** A binary outcome ${learned, not_learned}$.
+
+## Functions
+When a student encounters an activity, they have a probability of knowing the answer if they try. This depends on their skill level and the difficulty of the activity. 
+
+$P(K) = f(S,D)$
+
+When a student faces an activity they can try, guess, or quit. This depends on their skill level, the difficulty of the task, and their motivational state.
+
+$P(E) = f(S,D,M)$
+
+If a student tries, theyr probability of getting the question correct depneds on their skill level, the difficulty of the task, and their motivation.
+
+$P(Correct|Try) = f(S,D,M)$
+
+If a student gets the question correct, they can learn from it. This depends on their skill level, the difficulty of the task, and their motivation.
+
+$P(Learn|Correct) = f(S,D,M)$
+
+If a student guesses, or gets the answer wrong, they cannot learn:
+
+$P(Learn|Incorrect) = 0$ 
+$P(Learn|Guess) = 0$ 
+
+## ITS recommender algorithm
+
+```python
+Initialize student skill S as random or if available.
+
+Choose D based on S.
+
+While quit is false:
+  present activity A with difficulty D to student.
+  observe the correctness of the student's response
+  observe language of the student's response
+
+  update M from language of the student's response
+  update S from correctness of the student's response
+
+  pick a difficulty D for the next problem and serve it to the student.
+```
+
+## Baseline recommender algorithm
+Does the same, but does not use M to choose D.
+
+### Here's a simulation
+
+Still needs work... Mostly, we need a model of how M changes over time. I'd say M goes down over time, but is also dependent on `probability_student_knows` if you get the question right, but you were supposed to get it right, it might not be very motivating, on the other hand, if you try, and get a hard question right (e.g., $p$ was low), that might be motivating. Choosing to guess also lowers motivation.
+
+We are also not modeling changes in motivation due to ITS actions. We are assuming that the ITS can influence the motivation, so the M-ITS could observe that when M gets too low, it shows not a math question, but a motivation prompt that produces no learning outcome, but increases M.
+
+```{r}
+# Setting parameters
+initial_skill <- 120
+skill_variance <- 10
+initial_motivation <- 100
+motivation_variance <- 10
+motivation_boost <- 0.01
+initial_difficulty <- rnorm(1, initial_skill, skill_variance)
+measurement_error <- rnorm(1, 0, 5)  # measurement error for motivation
+
+# Initialize
+S <- initial_skill
+M <- rnorm(1, initial_motivation, motivation_variance)
+D <- initial_difficulty
+engagement_outcome <- "engage"
+iteration <- 1  # iteration counter
+
+# ITS recommender simulation
+while (engagement_outcome != "quit") {
+  print(paste("Iteration:", iteration))
+  print(paste("Skill (S):", S))
+  print(paste("Motivation (M):", M))
+  print(paste("Difficulty (D):", D))
+  
+  # Calculate probability student knows answer
+  skill_minus_difficulty <- S - D
+  probability_student_knows <- 1 / (1 + exp(-skill_minus_difficulty))
+
+  # Determine engagement probabilities
+  P_engage <- 1 / (1 + exp(-0.05 * (S + M - D)))
+  P_engage <- min(max(P_engage, 0.05), 0.95)  # Clipping P_engage to lie within [0.05, 0.95]
+  P_guess <- (1 - P_engage) / 2
+  P_quit <- 1 - P_engage - P_guess
+
+  # Determine engagement outcome
+  engagement_outcome <- sample(c("try", "guess", "quit"), 1, prob = c(P_engage, P_guess, P_quit))
+  print(paste("Engagement outcome:", engagement_outcome))
+
+  # Update M and S based on outcome
+  if (engagement_outcome == "try") {
+    probability_correct_try <- 1 / (1 + exp(-(probability_student_knows + motivation_boost * M)))
+    correct <- sample(c(TRUE, FALSE), 1, prob = c(probability_correct_try, 1 - probability_correct_try))
+    print(paste("Tried and got the answer", ifelse(correct, "correct", "incorrect")))
+    if (correct) {
+      S <- S + rnorm(1, 0.5, 0.1)  # Assumption: increase skill slightly if correct
+      M <- M + rnorm(1, 0, measurement_error)  # Assumption: Motivation update with measurement error
+    } else {
+      M <- M - rnorm(1, 0, measurement_error)  # Assumption: decrease motivation with error if wrong
+    }
+  } else if (engagement_outcome == "guess") {
+    correct <- sample(c(TRUE, FALSE), 1, prob = c(0.5, 0.5))  # 50% chance to get it right by guessing
+    print(paste("Guessed and got the answer", ifelse(correct, "correct", "incorrect")))
+    if (correct) {
+      M <- M - rnorm(1, 0, measurement_error)  # Assumption: decrease motivation with error if correct guess
+    } else {
+      M <- M - rnorm(1, 0, measurement_error)  # Assumption: decrease motivation with error if wrong guess
+    }
+  }
+
+  # Update D based on new estimates of S and M
+  D <- rnorm(1, S, skill_variance)
+  iteration <- iteration + 1
+  print("")  # Blank line for better readability
+}
+
+print(paste("Final skill:", S))
+print(paste("Final motivation:", M))
+```
