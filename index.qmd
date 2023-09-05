@@ -4,6 +4,7 @@ subtitle: EAAI Submission
 author: "Benjamin Lira and Stefania Druga"
 abstract: Effective human tutors excel in diagnosing students' content knowledge and recognizing and responding to their motivational and emotional states. Psychological research has long established the importance of these affective states for learning. Our study aims to explore the design of AI tutors that could infer a student's motivation and focus when providing personalized instruction. Using the Eedi public dataset, we extract common mathematics questions that middle school students need to answer and simulate conversations they might have with an AI tutor that could help them find the correct answer. We employ these simulated conversations to infer a student's motivational state. We then design a new recommender system that will use the inferred emotional state of the student when suggesting the next appropriate instructional step, which could be a more simple question, a reframing exercise, or the involvement of a trusted adult to support a young student's self-regulation. We find that training a custom language model to detect student motivational state could effectively integrate socio-emotional learning signals in existing recommendation systems used for AI tutors. We propose modeling students' motivational state will provide learning benefits in the short and long term, compared with a baseline of only tracing a student's knowledge.
 code-fold: true
+self-contained: true
 ---
 
 # Next steps
