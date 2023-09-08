@@ -562,6 +562,7 @@ for (i in questions) {
   cat(glue('<img src="data/eedi/images/{i}.jpg" width="320px" height="240px">'))
   if (i %% 10 == 0) { cat('<br>') }  # Start a new row after every 10 images
 }
+
 ```
 
 </div>
@@ -623,6 +624,11 @@ data50 = data50 %>%
                             cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
                             agreeableness, conscientiousness, neuroticism, openness, confidence, 
                             frustration, boredom, curiosity, engagement), generate_prompt))
+
+data50 = data50 %>% 
+  mutate(prompt = as.character(prompt))
+
+write_csv(data50, "data/data50.csv")
 ```
 
 We now have the 50 prompts generated!
