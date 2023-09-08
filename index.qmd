@@ -7,14 +7,16 @@ code-fold: true
 self-contained: true
 ---
 
-# Next steps
+# Initial thoughts
+
+## Next steps
 
 1. Download data
 2. Use data to simulate conversations between tutor and student.
 3. Use simulated conversations to identify motivational states.
 4. Simulate learning outcomes based on motivational states.
 
-# Data 
+## Data 
 Data comes from the Eedi dataset, which contains 1.5 million interactions between students and tutors. The data is available [here](https://eedi.com/projects/neurips-education-challenge)
 
 Here's a quick look at the data.
@@ -86,7 +88,7 @@ It seems to me that to generate conversations, we can use the following procedur
 2. use the question text, student metadata, prior sequence of quesitons, and confidence to generate a tutoring conversation.
 3. Go from there.
 
-# Extracting metadata for simulating conversaitons.
+## Extracting metadata for simulating conversaitons.
 
 Let's work through an example, say the 1000th row in the data.
 ```{r 1000th_row}
@@ -148,7 +150,7 @@ train_data %>% filter(UserId == 2918) %>%
   tab_header(title = "Sequence of questions")
 ```
 
-# Simulating conversations
+## Simulating conversations
 I started generating some conversations using chatGPT using the following prompt:
 
 To get more diversity, I am pulling other psychological characteristics from hypothetical distributions.
@@ -198,7 +200,7 @@ Code to be written.
 
 From running this, we create a dataset, which we can use to identify motivational states. See `data/conversations.jsonl` for the resulting dataset.
 
-# Identifying motivational states
+## Identifying motivational states
 We can use the dataset to identify motivational states. We can use the following code to identify the most common motivational states.
 
 There are a few ways in which we can go about this. Perhaps the simplest but most expensive one is to have chatGPT read the conversations and score them.
@@ -297,26 +299,26 @@ We can track the similarity of student language to our target embeddings for eac
 knitr::include_graphics("output/pilot/embedding similarity.png")
 ```
 
-# Simulating learning outcomes
+## Simulating learning outcomes
 We can simulate learning outcomes by using a reinforcement learning framework with some assumptions, and then simulate a range of learning outcomes.
 
 We can use the following system to simulate how a motivationally aware tutor guides student's learning, compared to a baseline.
 
-## Assumptions
+### Assumptions
 1. All learning happens about a single skill
 2. For simplicity, there is no forgetting (we could add this)
 3. Motivation influences a student's engagement decisions.
 4. The ITS can influence a student's motivation.
 5. There is measurement error $e$ when measuring student's motivation from their conversation.
 
-## Definitions
+### Definitions
 1. **Student Skill ($S$):** A continuous quantity representing the student's current skill level.
 2. **Activity Difficulty ($D$):** A continuous quantity representing how challenging an activity is.
 3. **Motivational State ($M$):** A continuous quantity representing the student's current motivation.
 4. **Engagement Decision ($E$):** A set of possible choices ${try, guess, quit}$.
 5. **Learning Outcome ($L$):** A binary outcome ${learned, not_learned}$.
 
-## Functions
+### Functions
 When a student encounters an activity, they have a probability of knowing the answer if they try. This depends on their skill level and the difficulty of the activity. 
 
 $P(K) = f(S,D)$
@@ -338,7 +340,7 @@ If a student guesses, or gets the answer wrong, they cannot learn:
 $P(Learn|Incorrect) = 0$ 
 $P(Learn|Guess) = 0$ 
 
-## ITS recommender algorithm
+### ITS recommender algorithm
 
 ```python
 Initialize student skill S as random or if available.
@@ -356,16 +358,18 @@ While quit is false:
   pick a difficulty D for the next problem and serve it to the student.
 ```
 
-## Baseline recommender algorithm
+### Baseline recommender algorithm
 Does the same, but does not use M to choose D.
 
-### Here's a simulation
+#### Here's a simulation
 
 Still needs work... Mostly, we need a model of how M changes over time. I'd say M goes down over time, but is also dependent on `probability_student_knows` if you get the question right, but you were supposed to get it right, it might not be very motivating, on the other hand, if you try, and get a hard question right (e.g., $p$ was low), that might be motivating. Choosing to guess also lowers motivation.
 
 We are also not modeling changes in motivation due to ITS actions. We are assuming that the ITS can influence the motivation, so the M-ITS could observe that when M gets too low, it shows not a math question, but a motivation prompt that produces no learning outcome, but increases M.
 
 ```{r}
+set.seed(34)
+
 # Setting parameters
 initial_skill <- 120
 skill_variance <- 10
@@ -432,4 +436,200 @@ while (engagement_outcome != "quit") {
 
 print(paste("Final skill:", S))
 print(paste("Final motivation:", M))
+```
+
+# Second Pass
+
+## Next steps
+
+1. We need to generate high quality conversations.
+2. Use the most complete data available
+3. Give the model ground truth.
+
+## Data
+
+Let's start by merging all data, so that we can filter for completenes. After filtering out incomplete data, and so on, 1.3M rows become 660K.
+
+```{r}
+complete_data = train_data %>% 
+  left_join(question_metadata, by = c("QuestionId" = "QuestionId")) %>% 
+  left_join(answer_metadata, by = c("AnswerId" = "AnswerId")) %>%
+  left_join(student_metadata, by = c("UserId" = "UserId")) %>%
+  # drop incomplete students
+  filter(!is.na(DateOfBirth), !is.na(Gender), !is.na(PremiumPupil)) %>%
+  group_by(UserId) %>%
+  mutate(
+    average_confidence = mean(Confidence, na.rm = TRUE), 
+    confidence_response_rate = sum(!is.na(Confidence))/n(),
+    average_correctness = mean(IsCorrect, na.rm = TRUE),
+  ) %>% 
+  ungroup() %>%
+  filter(!is.na(average_confidence))
+```
+
+From this data, I will sample 50 students, with high confidence completeness (> .80, drops to 97K).
+
+```{r}
+set.seed(18)
+data50 = complete_data %>% 
+  filter(confidence_response_rate > 0.8) %>% 
+  group_by(UserId) %>%
+  nest() %>%
+  ungroup() %>%
+  slice_sample(n = 50) %>% 
+  unnest(cols = c(data)) %>% 
+  arrange(UserId, QuizId,DateAnswered) %>% 
+  group_by(UserId,QuizId) %>% 
+  mutate(
+    cum_percent_correct = cumsum(IsCorrect)/row_number(),
+    cum_percent_confident = cumsum(Confidence)/row_number(),
+    problems_so_far = row_number(),
+    student_age = (difftime(DateAnswered, DateOfBirth, units = "auto") %>% as.numeric())/364.25
+    )
+
+set.seed(352)
+
+data50 = data50 %>%
+  group_by(UserId) %>%
+  slice_sample(n = 1) %>%
+  ungroup() %>%
+  select(UserId, Gender, student_age, QuizId, QuestionId, SubjectId, IsCorrect, Confidence, average_confidence, average_correctness, cum_percent_correct, cum_percent_confident, problems_so_far) %>%
+  mutate(Gender = case_match(Gender, 
+  1 ~ "Male",
+  2 ~ "Female"
+  )) %>%
+  rowwise() %>%
+  # lets pull random values for the psychological variables
+  mutate(
+    iq = rnorm(1, 0, 1),
+    extraversion = rnorm(1, 0, 1),
+    agreeableness = rnorm(1, 0, 1),
+    conscientiousness = rnorm(1, 0, 1),
+    neuroticism = rnorm(1, 0, 1),
+    openness = rnorm(1, 0, 1)
+  ) %>%
+  ungroup() %>%
+  # and for motivatoinal states (0 - 10)
+  mutate(
+    confidence = sample(0:10, 50, replace = T),
+    frustration = sample(0:10, 50, replace = T),
+    boredom = sample(0:10, 50, replace = T),
+    curiosity = sample(0:10, 50, replace = T),
+    engagement = sample(0:10, 50, replace = T)
+  )
+
+
+
+questions = data50$QuestionId
+
+subjects_to_words = function(text){
+  text = gsub("\\[|\\]", "", text)
+  text = str_split(text, ",")[[1]]
+  text = as.numeric(text)
+  text = subject_metadata %>% filter(SubjectId %in% text) %>% pull(Name)
+  text = paste(text, collapse = ", ")
+  return(text)
+}
+
+data50 = data50 %>% 
+  rowwise() %>%
+  mutate(
+    subject_text = map_chr(SubjectId, function(x) subjects_to_words(x))
+  ) %>% 
+  select(-SubjectId)
+
+```
+
+Here is the resultting group of students with fictional data, and preset psychological variables.
+
+```{r}
+data50 %>% 
+  gt() %>%
+  fmt_auto() %>%
+  fmt_number(vars(iq:openness, average_correctness, cum_percent_correct), decimals = 2)
+```
+
+And here are the sampled problems
+
+
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 10px;">
+
+```{r}
+#| echo: false
+#| results: "asis"
+library(glue)
+for (i in questions) {
+  cat(glue('<img src="data/eedi/images/{i}.jpg" width="320px" height="240px">'))
+  if (i %% 10 == 0) { cat('<br>') }  # Start a new row after every 10 images
+}
+```
+
+</div>
+
+## Prompt generation.
+
+We can use the following code to generate prompts for the students.
+
+```{r}
+library(glue)
+
+generate_prompt <- function(question_text, subject_text, IsCorrect, Confidence, problems_so_far, 
+                            cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
+                            agreeableness, conscientiousness, neuroticism, openness, confidence, 
+                            frustration, boredom, curiosity, engagement) {
+  
+  prompt <- glue("
+  You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+  This question:
+  Question text: {question_text}
+  The question is about: {subject_text}
+  Did the student get the question right? {ifelse(IsCorrect == 0, 'No', 'Yes')}
+  What was the student's confidence for this question? {Confidence} 
+
+  About the student's learning session so far:
+  This student has worked on {problems_so_far} problems so far.
+  The student's average confidence so far is {cum_percent_confident %>% round(0)}.
+  The student has answered {(cum_percent_correct*100) %>% round(0)}% questions correctly so far.
+
+  About the student:
+  Student age: {student_age %>% round(0)}
+  Student gender: {Gender}
+  Student IQ: {iq %>% round(3)}
+  Student Extraversion: {extraversion%>% round(3)}
+  Student Agreeableness: {agreeableness%>% round(3)}
+  Student Conscientiousness: {conscientiousness%>% round(3)}
+  Student Neuroticism: {neuroticism%>% round(3)}
+  Student Openness: {openness%>% round(3)}
+
+  And this is the student's current motivational state. These are in a scale of 0 - 10
+  Confidence: {confidence}
+  Frustration: {frustration}
+  Boredom: {boredom}
+  Curiosity/Interest: {curiosity}\n
+  Engagement: {engagement}
+  ")
+  
+  return(prompt)
+}
+
+
+
+library(purrr)
+
+data50 = data50 %>%
+  mutate(question_text = "to be transcribed") %>%
+  mutate(prompt = pmap(list(question_text, subject_text, IsCorrect, Confidence, problems_so_far, 
+                            cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
+                            agreeableness, conscientiousness, neuroticism, openness, confidence, 
+                            frustration, boredom, curiosity, engagement), generate_prompt))
+```
+
+We now have the 50 prompts generated!
+
+```{r}
+data50 %>% 
+  select(prompt) %>% 
+  head() %>% 
+  gt()
 ```
