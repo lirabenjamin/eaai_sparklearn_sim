@@ -494,7 +494,7 @@ data50 = data50 %>%
   group_by(UserId) %>%
   slice_sample(n = 1) %>%
   ungroup() %>%
-  select(UserId, Gender, student_age, QuizId, QuestionId, SubjectId, IsCorrect, Confidence, average_confidence, average_correctness, cum_percent_correct, cum_percent_confident, problems_so_far) %>%
+  select(UserId, Gender, student_age, QuizId, QuestionId, SubjectId, IsCorrect, CorrectAnswer, Confidence, average_confidence, average_correctness, cum_percent_correct, cum_percent_confident, problems_so_far) %>%
   mutate(Gender = case_match(Gender, 
   1 ~ "Male",
   2 ~ "Female"
@@ -575,7 +575,7 @@ for (i in questions) {
 #
 library(glue)
 
-generate_prompt <- function(question_text, subject_text, IsCorrect, Confidence, problems_so_far, 
+generate_prompt <- function(question_text, subject_text, IsCorrect, CorrectAnswer,Confidence, problems_so_far, 
                             cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
                             agreeableness, conscientiousness, neuroticism, openness, confidence, 
                             frustration, boredom, curiosity, engagement) {
@@ -586,6 +586,7 @@ generate_prompt <- function(question_text, subject_text, IsCorrect, Confidence, 
   This question:
   Question text: {question_text}
   The question is about: {subject_text}
+  The correct answer to the question is: {case_match(CorrectAnswer,1 ~ 'A', 2 ~ 'B', 3 ~ 'C', 4 ~ 'D')}
   Did the student get the question right? {ifelse(IsCorrect == 0, 'No', 'Yes')}
   What was the student's confidence for this question? {Confidence} 
 
@@ -621,15 +622,15 @@ library(purrr)
 
 data50 = data50 %>%
   mutate(question_text = "to be transcribed") %>%
-  mutate(prompt = pmap(list(question_text, subject_text, IsCorrect, Confidence, problems_so_far, 
+  mutate(prompt = pmap(list(question_text, subject_text, IsCorrect, CorrectAnswer, Confidence, problems_so_far, 
                             cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
                             agreeableness, conscientiousness, neuroticism, openness, confidence, 
                             frustration, boredom, curiosity, engagement), generate_prompt))
 
-data50 %>% 
+data50 = data50 %>% 
   mutate(prompt = as.character(prompt))
 
-write_csv(data50, "data/data50.csv")
+write_csv(data50, "data/data50_w_correct.csv")
 #
 #
 #
