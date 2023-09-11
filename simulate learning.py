@@ -1,48 +1,101 @@
+from numpy.random import normal
+from numpy.random import random
+from math import exp
+
+
+def pick_item(student_knowledge, motivation, is_motivation_its):
+    if(is_motivation_its):
+        return normal(student_knowledge + motivation, 1)
+    else:
+        return normal(student_knowledge, 1)
+
+
+def student_attempt(student_knowledge, motivation, item_difficulty):
+    relative_difficulty = item_difficulty - student_knowledge
+    # add a boost or drop depending on the motivation of the student
+    relative_difficulty += motivation
+
+    # Probability of success depends on relative difficulty
+    probability_of_success = 1 / (1 + exp(-relative_difficulty))
+
+    # Did the student succeed?
+    if(random() < probability_of_success):
+        is_correct = True
+    else:
+        is_correct = False
+    return is_correct
+
+# updates when student sees feedback
+
+
+def update_knowledge(student_knowledge, item_difficulty, is_correct):
+    if(is_correct):
+        return student_knowledge + (item_difficulty - student_knowledge) / 10
+    else:
+        return student_knowledge
+
+
+def update_motivation(student_knowledge, item_difficulty, motivation, is_correct):
+    relative_difficulty = item_difficulty - student_knowledge
+    # if you get something difficult right, you get more motivated, getting something right is never demotivating
+    # if you get something easy wrong, you get more demotivated, getting something wrong is never motivating
+    if(is_correct):
+        return motivation + max(0, relative_difficulty / 10)
+    else:
+        return motivation - min(0, relative_difficulty / 10)
+
+
+def update_quit_probability(quit_probability, motivation, iteration):
+    # quit probability increases through time
+    quit_probability = min(.99, quit_probability + iteration*0.005)
+
+    # if you are motivated, you are less likely to quit
+    quit_probability = max(0.01,quit_probability - motivation / 10)
+    quit_probability = min(.99, quit_probability)
+    return quit_probability
+
+update_quit_probability(0, 0, 0)
+
+def its_deliver_intervention(motivation, effectiveness, effectiveness_sd, is_motivation_its):
+    # if your motivation drops below 0, you get an intervention
+    if(is_motivation_its):
+        if(motivation < 0):
+            return motivation + normal(effectiveness, effectiveness_sd)
+        else:
+            return motivation
+    else:
+        return motivation
+
+
+def simulate_learning(student_knowledge, motivation, item_difficulty, is_motivation_its, effectiveness, effectiveness_sd, quit_probability):
+    iteration = 1
+    skills = []
+    motivations = []
+    while random() > quit_probability:
+        item_difficulty = pick_item(
+            student_knowledge, motivation, is_motivation_its)
+        is_correct = student_attempt(
+            student_knowledge, motivation, item_difficulty)
+        student_knowledge = update_knowledge(
+            student_knowledge, item_difficulty, is_correct)
+        motivation = update_motivation(
+            student_knowledge, item_difficulty, motivation, is_correct)
+        quit_probability = update_quit_probability(
+            quit_probability, motivation, iteration)
+        motivation = its_deliver_intervention(
+            motivation, effectiveness, effectiveness_sd, is_motivation_its)
+        skills.append(student_knowledge)
+        motivations.append(motivation)
+        iteration += 1
+    return skills, motivations
+
+
+skills, motivations = simulate_learning(0, 0, 0, True, .1, .1, 0)
+
+print(skills)
+print(motivations)
+
 import matplotlib.pyplot as plt
-
-def compound_interest_with_contributions(P, r, PMT, t):
-    return P*(1 + r)**t + PMT*((1 + r)**t - 1)/r
-
-def wealth_accumulation(r, PMT, years):
-    P = 0
-    accumulation = []
-    for year in years:
-        P = compound_interest_with_contributions(P, r, PMT, 1)
-        accumulation.append(P)
-    return accumulation
-
-# Parameters
-r = 0.08  # Annual interest rate
-PMT = 6500  # Annual contribution
-
-# Calculate wealth accumulation
-years_25_to_65 = list(range(24, 66))
-years_31_to_65 = list(range(31, 66))
-
-wealth_24_start = wealth_accumulation(r, PMT, years_25_to_65)
-wealth_31_start = [0]*(31-24) + wealth_accumulation(r, PMT, years_31_to_65)
-
-# Plot
-plt.figure(figsize=(10, 6))
-plt.plot(years_25_to_65, wealth_24_start, label='Start at 24', color='blue')
-plt.plot(years_25_to_65, wealth_31_start, label='Start at 31', color='red')
-
-# Add wealth values at the tip of each line
-plt.annotate(f"${wealth_24_start[-1]:,.2f}", 
-             (years_25_to_65[-1], wealth_24_start[-1]), 
-             textcoords="offset points", 
-             xytext=(0,10),
-             ha='center')
-plt.annotate(f"${wealth_31_start[-1]:,.2f}", 
-             (years_25_to_65[-1], wealth_31_start[-1]), 
-             textcoords="offset points", 
-             xytext=(0,10),
-             ha='center')
-
-plt.xlabel('Age')
-plt.ylabel('Wealth Accumulated ($)')
-plt.title('Wealth Accumulation Over Time with Compound Interest')
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
+plt.plot(skills)
+plt.plot(motivations)
 plt.show()
