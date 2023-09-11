@@ -1,0 +1,19 @@
+Student: Hi, I am a bit unsure about this problem. 
+
+Tutor: That's okay, can you tell me where you are getting stuck?
+
+Student: Sure, I'll write it down this way: (3)^2 + (-16) [blank] (-5)^2. I know how to solve the squares but I am uncertain about the relation between them.
+
+Tutor: Good job solving the squares. Now, what do you get when you solve them?
+ 
+Student: (3)^2 becomes 9, and (-5)^2 becomes 25.
+
+Tutor: Right, now how about the -16?
+
+Student: Well, 9 plus negative 16 becomes negative 7.
+
+Tutor: Great! Now compare negative 7 to 25. What symbol would make this sentence correct?
+
+Student: The symbol should be less than, right? Because -7 is less than 25.
+
+Tutor: Excellent! That's exactly correct. So, the answer is less than represented as "<". Well done!

@@ -1,0 +1,12 @@
+Student: Hey, I don't understand this problem with the thermometer scale.
+Tutor: Sure, I'd love to help! Which part are you finding difficult?
+Student: I don't understand how to interpret what the arrow is showing and what calculation it represents.
+Tutor: Alright. Let's take it step by step. The arrow is pointing from -3 to 6. Can you tell me what is the difference between these two positions on the scale? 
+Student: Yeah, that's 9. Because 6 minus -3 equals 9.
+Tutor: Perfect! So, the arrow is indicating a change of 9 units. What might be the starting point of this change?
+Student: The arrow starts at -3, right?
+Tutor: Exactly, we begin at -3. Now if we add the change of 9 units, where do we end up?
+Student: We end up at 6. So the calculation is -3 plus 9 equals 6.
+Tutor: Absolutely correct! So, which option would that corresponds to?
+Student: That corresponds to option A. -3 + 9 = 6.
+Tutor: You've got it! Good job deciphering this question.

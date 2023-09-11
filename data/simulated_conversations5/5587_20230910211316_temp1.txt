@@ -1,0 +1,25 @@
+Student: I'm struggling with this one.
+
+Tutor: I see, could you tell me what you've tried so far?
+
+Student: I thought that the answer would be simply multiplying 1065 by 8, but the answer choices are throwing me off.
+
+Tutor: Ah, I see. The choices do seem odd, but think about it like this: You're doing the multiplication but breaking down 1065 into its individual components, like 1000+60+5. Then multiplying each by eight. Does that help?
+
+Student: Oh, so I multiply each part by 8 individually. Got it. But I'm confused about which option to choose.
+
+Tutor: No worries, let's take it step by step. If you multiply 1000 by 8, what do you get?
+
+Student: I get 8000.
+
+Tutor: Good! Now try the same for the other components of 1065.
+
+Student: When I multiply 60 by 8, I get 480. And 5 by 8 gives me 40.
+
+Tutor: Great! Now try to look for an option that adds up these individual products.
+
+Student: That's going to be Option B: 8000 + 0 + 480 + 40. Right?
+
+Tutor: That's correct! You've got it! Keep practicing, it gets better with time. 
+
+Student: Thanks, I'll keep trying.

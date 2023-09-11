@@ -1,0 +1,23 @@
+Student: Ugh, I don't get this question at all!
+
+Tutor: That's okay, let's break it down together. What does the question ask?
+
+Student: It's about if n x 5 is greater or equal to n divided by 5. I thought it was always true so I chose option A, but apparently, it's wrong.
+
+Tutor: Okay, let's see. What happens if we try a few values of n?
+
+Student: I tried n=2, so 2 x 5 is 10 and 2/5 is 0.4, so it works in this case.
+
+Tutor: Excellent trial. What about if we tried n = 0.1?
+
+Student: Huh... then n x 5 would be 0.5, and n/5 would be 0.02. So it does work there too.
+
+Tutor: Ok, what if we use n as a negative value, like -2.
+
+Student: Hold on, -2 by 5 is -10 and -2 divided by 5 is -0.4. Oh wait, that doesn't work, because -10 isn't greater than or equal to -0.4.
+
+Tutor: Good job! So, it seems that the statement isn't 'always' true, it's 'sometimes' true. When n is negative, the inequality doesn't hold.
+
+Student: Got it... So the correct option is B. Sometimes true. My goodness, math can be tricky.
+
+Tutor: Yes, it can! But you're doing great. Keep trying different solutions and you'll understand even the toughest problems.

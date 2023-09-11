@@ -1,0 +1,23 @@
+Student: This question is really stumping me, I'm not sure how to work around it.
+
+Tutor: That's alright, let's try to tackle it together. Could you tell me your understanding of the given diagram? 
+
+Student: Well, from what I can see, r is further than p and q. But I'm confused about how to represent that in algebraic terms.
+
+Tutor: Good observation! Now consider the lengths of p and q. Are they the same or different?
+
+Student: Both p and q are one away. But, q is diagonal, does that make a difference?
+
+Tutor: Yes, indeed! So, if you consider the length of a diagonal versus the length of a straight line, which do you think is longer?
+
+Student: Oh, a diagonal line is longer than a straight line.
+
+Tutor: That's correct! Now, if we add the lengths of a p line and a q line, would that be shorter or longer than r?
+
+Student: Hmmm, the combined lengths of p and q would be shorter than r, right?
+
+Tutor: Yes, exactly! So, what symbol do you think would be fitting to represent r in comparison to p + q? 
+
+Student: Oh, I get it now! It has to be less than, symbol B.
+
+Tutor: Great job! You've worked through it well. It's crucial to think about these geometric principles when working with algebraic representations.

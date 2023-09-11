@@ -1,0 +1,14 @@
+Student: I'm a bit lost with this question.
+Tutor: No problem! Can you tell me what you are finding confusing?
+Student: Yeah, I'm not sure how to tell if these line segments are parallel or the same length.
+Tutor: Okay, let's tackle it one at a time. Starting with parallel lines, can you tell me what you know about them?
+Student: Well, parallel lines never meet and they have the same slope right?
+Tutor: Absolutely correct! Can you try to find the slope of each line segment?
+Student: I'm not sure how to calculate that.
+Tutor: No problem! The slope can be calculated as (y2-y1) / (x2-x1). Try calculating the slope for both segments.
+Student: Alright, lemme attempt that. 
+(After some time)
+Student: Okay, I've got the slopes. They're different so the lines aren't parallel. But what about their lengths?
+Tutor: Great job! Now for lengths, there's a formula - square root of ((x2-x1)^2 + (y2-y1)^2). Give it a try.
+Student: I calculated the lengths and they are the same! So only Katie is right.
+Tutor: Good work! Now you know how to determine the characteristics of line segments. Remember these methods as they will come in handy in the future.

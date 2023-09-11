@@ -1,0 +1,13 @@
+Student: I think I got this question about vertical opposite angles correct, but I'm not totally sure. I chose angle C, is that right?
+
+Tutor: Yes, you are correct. Good job! Vertical opposite angles are always equal. Can you tell me how you figured it out?
+
+Student: Well, I remembered the rule you mentioned about vertically opposite angles, so I looked for the angle that would be directly across from angle p.
+
+Tutor: That's exactly right. Can you think of the reason why vertically opposite angles are equal?
+
+Student: I guess because they are formed by the same intersecting lines?
+
+Tutor: Correct, they're formed by the same lines crossing each other. This means they have the same angle measure. Keep practicing and these concepts will become second nature. 
+
+Student: That makes sense, thank you! I'll keep working on problems like this to make sure I have got the hang of it.

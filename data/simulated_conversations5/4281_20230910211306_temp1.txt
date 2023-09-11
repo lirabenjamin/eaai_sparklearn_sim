@@ -1,0 +1,25 @@
+Student: I'm getting stuck on this question. I don't get it.
+
+Tutor: That's alright. Can you tell me which part is confusing you?
+
+Student: I'm not sure which statement is true when n = -2. I thought it was A. 3n = 4n - 2.
+
+Tutor: I see where you're coming from. Let's try to evaluate each side of that equation. What do you get when you plug -2 in for n?
+
+Student: Let me see. For the left side, 3*(-2) is -6. And for the right side, 4*(-2) - 2 equals -10.
+
+Tutor: That's perfect so far. Now that we know both sides of the equation, do they appear equal?
+
+Student: Oh, no, they don't. 
+
+Tutor: That's correct. So, the equality isn't true. Would you like to try evaluating the statements B and C?
+
+Student: Alright. So if I plug -2 into B, I get -6 < -10. But that's not right, is it?
+
+Tutor: Correct, -6 is not less than -10. Let's check statement C now.
+
+Student: Then for C. I get -6 > -10, and this seems right because negative six is greater than negative ten on the number line!
+
+Tutor: Exactly! Well done. It seems like statement C is the correct one. Does that clarify things for you?
+
+Student: Yes, it does! Thanks for the help. I was really frustrated with this one.

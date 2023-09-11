@@ -1,0 +1,19 @@
+Student: Hey, I answered this question correctly, but I'm not entirely confident about my understanding. The question was "Square numbers have an odd number of factors". I chose 'always true' but I'm not fully convinced. 
+
+Tutor: Let's try to understand why this is. Can you try to think of what square numbers are and how we can get them?
+
+Student: I know square numbers are numbers you get when you multiply a number by itself. Like 4 is a square number since 2*2 is 4. 
+
+Tutor: That's correct. Now, if we take the square number 4 for example and list its factors, what are they?
+
+Student: The factors of 4 are 1, 2 and 4.
+
+Tutor: Exactly. How many factors did you find for the square number ‘4’?
+
+Student: So that's three factors. And 3 is an odd number...
+
+Tutor: Excellent! So can you try another square number to see if this pattern holds?
+
+Student: Ok, I'll try 9 because it's 3*3. And the factors are...1, 3 and 9! Again, that's an odd number of factors. So I guess that means the statement is always true!
+
+Tutor: You got it! That's a great job you've done there proving it to yourself! Keep up the good thinking!

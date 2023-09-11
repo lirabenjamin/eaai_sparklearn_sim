@@ -1,0 +1,25 @@
+Student: I'm stuck with this problem here.
+
+Tutor: That's perfectly okay. Could you explain what part is tripping you up?
+
+Student: Well, I'm not sure if I counted the dots correctly in Pattern 4.
+
+Tutor: How about we step through each Pattern together to make sure we're counting accurately? 
+
+Student: Okay, so Pattern 1 has a L shape with a height of 4 and width of 3, so I think that's 12 dots...
+
+Tutor: Good. And what about Pattern 2? 
+
+Student: Pattern 2 adds a column of 4 dots, so that should be 12 from Pattern 1 plus these 4...so 16 dots?
+
+Tutor: Perfect. So now let's consider Pattern 3.
+
+Student: Pattern 3 adds another column of 4 dots to the left... so that's 16 from Pattern 2 plus 4 more that's... 20 dots then.
+
+Tutor: Excellent! So, now onto Pattern 4...
+
+Student: Pattern 4 adds another column. So adding 4 dots to the 20 from Pattern 3 makes it 24. Is that right?
+
+Tutor: Yes! Your counting was correct. Pattern 4 should indeed consist of 24 dots. Good job working through that. 
+
+Student: Oh great, I got it now. Thank you!

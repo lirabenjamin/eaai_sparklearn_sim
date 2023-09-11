@@ -1,0 +1,17 @@
+Student: I'm really banging my head against this algebra question.
+
+Tutor: Aw, don't worry too much. What does the question ask?
+
+Student: It's (2 + 10 x 3)/4, and I keep getting answer C. 30.5 But it's incorrect.
+
+Tutor: Okay, let's break it down together. Do you remember the BODMAS rule for the order of operations?
+
+Student: Yeah, brackets, orders, division and multiplication, addition and subtraction, isn't it?
+
+Tutor: Exactly! So you should start here with multiplication then proceed to addition and division. 
+
+Student: Okay, let's give it a try. That would make it (2 + 30)/4, which equals to 32/4, and after dividing, I should get 8 then.
+
+Tutor: Spot on! You used the BODMAS rule correctly and got the right answer. So, the correct choice would be B. 
+
+Student: Ah, I see where I got it twisted now. Thanks for helping me clear that up.

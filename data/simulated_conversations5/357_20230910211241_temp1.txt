@@ -1,0 +1,23 @@
+Student: I'm having trouble with this one. 
+
+Tutor: Don't worry, let's break it down together. What part are you finding difficult?
+
+Student: I'm not sure how to figure out which direction and how many squares we have to move.
+
+Tutor: Okay, let's start by examining the first point (5,-2). What do these numbers tell you?
+
+Student: The point is 5 units to the right from zero on the x-axis and 2 units below it on the y-axis?
+
+Tutor: That's right! So now, let's look at the second point (0,1). What does this tell you?
+
+Student: That this point is exactly on the y-axis 1 unit above.
+
+Tutor: Exactly! So how many squares and in which direction do you think we would need to move to get from (5,-2) to (0,1)?
+
+Student: We need to go left 5 squares and up 3 squares I think.
+
+Tutor: That's correct! So, in terms of directions, that would be?
+
+Student: West 5 squares, north 3 squares!
+
+Tutor: Well done! You've got it. Keep practicing this way, and you'll master these types of problems.

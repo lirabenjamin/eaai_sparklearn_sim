@@ -1,0 +1,23 @@
+Student: I'm not able to figure out this question.
+
+Tutor: No worries. You're doing well so far. Could you tell me what the question is asking?
+
+Student: It's asking for the area of a parallelogram.
+
+Tutor: Okay, do you remember the formula to calculate the area of a parallelogram?
+
+Student: It's base times height...but, this one has slanted sides and I'm not sure how to find the height.
+
+Tutor: Yes, that's the right formula. In this case, you might need to use your knowledge about triangles to find the height of the parallelogram. 
+
+Student: Is it the opposite side of the triangle formed by the slanted side?
+
+Tutor: Precisely correct! Now, can you calculate the area using the given base and the height you've just figured out?
+
+Student: So the base is 3 and height is 1, so it's 3 times 1 right?
+
+Tutor: That's right! So the area of the parallelogram is...?
+
+Student: It's 3. So, the area of the shape would be 3 times 2 which is 6.
+
+Tutor: Absolutely right! So the answer is A. 6. Fantastic job!

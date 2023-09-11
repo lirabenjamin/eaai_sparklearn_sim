@@ -1,0 +1,15 @@
+Student: I'm not so confident about this question.
+
+Tutor: That's okay, we can work through it together. What is the question asking us to find?
+
+Student: It says that Jack's number is a prime number and a multiple of 7. I don't understand what a prime number is.
+
+Tutor: A prime number is a number that has only two distinct natural number divisors: 1 and itself.
+
+Student: So Jack's number is a prime number, which means it only has two divisors, and it is a multiple of 7?
+
+Tutor: That's right! So the number should only be divisible by 1 and itself and also by 7. Can you now try and figure out the right answer?
+
+Student: Okay, well it can't be 1 because it's not a multiple of 7, and it can't be 17 or 49 because they aren't prime numbers. So it must be 7?
+
+Tutor: Exactly! 7 is a prime number and it is a multiple of itself, so it meets all the conditions. Great work deducing that!

@@ -1,0 +1,17 @@
+Student: I'm not really sure if I got the last question correct.
+
+Tutor: Alright. Can you tell me what you understand about the question?
+
+Student: Well, I'm supposed to find which protractor is correctly positioned to measure the obtuse angle shown in red. Both protractors A and B have the red line marking the angles.
+
+Tutor: That's true. So how did you tackle this problem?
+
+Student: I figured that since both protractors A and B have the red line, both would correctly measure the angle. So, I picked option C. But now, I'm second-guessing myself.
+
+Tutor: You're on the right track. Both protractors would give you the correct measurement of the angle. The positioning doesn't change the measurement, it's just about which side you're reading from. So, option C was indeed the correct choice. 
+
+Student: Oh, I guess I understood it correctly then! It's just a matter of understanding the reading from both sides.
+
+Tutor:   Exactly! Great job! Just remember, whether an angle is labeled on its left or right, the measurement will still be the same. Keep this in mind for future questions. 
+
+Student: That makes a lot of sense. I'll keep this in mind. Thank you for your help!

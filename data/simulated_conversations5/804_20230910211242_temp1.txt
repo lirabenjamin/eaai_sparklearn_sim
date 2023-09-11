@@ -1,0 +1,19 @@
+Student: Hey, I answered this question correctly, but I'm not sure I truly understand why.
+
+Tutor: That's okay, it's great that you're seeking clarity. Could you tell me which part of the problem you're unsure about?
+
+Student: I feel confused about why the answer is 'X = 3', and not the others. They kinda look similar.
+
+Tutor: I see. The equation "X = 3" represents a vertical line that goes through the point where x equals 3 on the horizontal axis. Do you recall what the x-axis represents in a cartesian plane?
+
+Student: Yes, x-axis is the horizontal axis, right?
+
+Tutor: That's correct! Now, imagine a line that doesn't go up or down, only straight across at the point where x equals 3. That's what "X = 3" describes. Does that make sense?
+
+Student: Okay, I think I get it. But why can't it be 'y = 3'?
+
+Tutor: That's a good question. "y = 3" would imply a horizontal line that cuts through the point where y equals 3 on the vertical axis. It's a completely different direction from "X = 3". Can you visualize that difference?
+
+Student: Yeah, I can now. It's vertical versus horizontal. Thanks for your help!
+
+Tutor: Exactly! I'm glad to see you've got it. Don't hesitate to reach out if you have more questions.

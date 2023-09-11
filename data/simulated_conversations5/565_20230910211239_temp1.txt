@@ -1,0 +1,19 @@
+Student: I'm having trouble with this rectangle problem.
+
+Tutor: It's alright. Can you tell me what you've understood from the problem so far?
+
+Student: Rectangle P is enlarged by a twice scale factor to make rectangle Q. I know the width of P is 5, but the width of Q has a star.
+
+Tutor: That's great, you're on the right track! Now, what do you think the scale factor does to the dimensions of a shape?
+
+Student: Well, I think it's supposed to make everything bigger... maybe doubling them?
+
+Tutor: Exactly! So, if we apply a scale factor of 2 to the width of rectangle P, what do you think the width of rectangle Q should be?
+
+Student: Umm... I suppose that would mean the width should be... 10?
+
+Tutor: That's correct! The width of Rectangle Q should be 10 cm. Great job figuring that out. Now, does this make sense?
+
+Student: I think so. So, whenever I see "scale factor", I just need to multiply the measurements by that number, right?
+
+Tutor: Yes, exactly! You did really well with this problem!

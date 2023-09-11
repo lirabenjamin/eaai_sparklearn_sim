@@ -1,0 +1,19 @@
+Student: Ugh, this question is so confusing! I can't figure it out.
+
+Tutor: I understand it can be challenging. Can you tell me what you've tried already so we can work through it together?
+
+Student: Well, I was thinking that a number might be a multiple of 2, 3, or 5, but not always a multiple of 30.
+
+Tutor: That's a good start! However, let's think about what makes a number a multiple of 30. Can you think of what factors you need for a number to be a multiple of 30?
+
+Student:  Oh, I guess a number needs to be a multiple of 2, 3, and 5, to be a multiple of 30. Is that right?
+
+Tutor: Exactly, you got it! So, what might that tell you about the relation between being a common multiple of 2, 3, and 5 and being a multiple of 30?
+
+Student: Hmm... I think I get now. Because a number needs to be a multiple of 2, 3, and 5 to be a multiple of 30, it means if you have a number that is a common multiple of 2, 3, and 5, it must also be a multiple of 30.
+
+Tutor: Spot on! So, how does that reflect on the statement in the question? Is it always true, sometimes true, or never true?
+
+Student: Based on my understanding now, it seems like it's always true.
+
+Tutor: Well done! You got it! Don't worry about the initial confusion, it's always a victory in the end when you can sort it out!

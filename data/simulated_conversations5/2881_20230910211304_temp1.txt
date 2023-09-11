@@ -1,0 +1,27 @@
+Student: I'm confused about this question.
+
+Tutor: That's perfectly fine. Can you tell me what you find confusing about it?
+
+Student: I'm just not sure about the star part. It's confusing.
+
+Tutor: Alright, let's break the question down. The question asks for a value to insert in place of the star and gives multiple options. What do you think is the next step?
+
+Student: I need to find out what to put in place of the star to balance the equation, right?
+
+Tutor: Exactly, that's a good starting point. Do you recall how to handle equations like this one?
+
+Student: Doesn't it mean that both sides of the equal sign should be the same?
+
+Tutor: Yes, you're correct. So whatever replaces the star should make sure the two sides of the equation are the same when you calculate them. Have you tried any of the options?
+
+Student: I tried C. I multiplied 4 by 32 and added 52 but that didn't work.
+
+Tutor: That's a good attempt, but remember to carefully consider the mathematical operations in each option. Shall we try another option?
+
+Student: Okay, let's try A. Maybe if I multiply 4 by the whole of (32 + 52)...
+
+Tutor: Excellent choice! Tell me what you get when you calculate that.
+
+Student: I got 336. It's equal to 4X7X12... So the answer is A?
+
+Tutor: You've got it! Well done, the correct answer is indeed A: 4(32 + 52). Keep practicing, it will get easier!

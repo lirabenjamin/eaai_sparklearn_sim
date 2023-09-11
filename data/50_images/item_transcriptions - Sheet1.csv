@@ -1,0 +1,1790 @@
+item_number,item_text,correct,prompt
+6,"Tom says: 7 x (2 + 3) = 7 x 2 +3
+Katie says: 7 x (2+3) = 7 x 2 + 7 x 3
+Who is correct?
+A. Only Tom
+B. Only Katie 
+C. Both Tom and Katie
+D. Neither is correct",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Linear Equations, Solving Equations
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 14 problems so far.
+The student's average confidence so far is 62.
+The student has answered 57% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.681
+Student Extraversion: -1.487
+Student Agreeableness: -0.03
+Student Conscientiousness: -0.58
+Student Neuroticism: 0.076
+Student Openness: -0.747
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 7
+Frustration: 6
+Boredom: 9
+Curiosity/Interest: 4
+
+Engagement: 10"
+19,"The question shows a graphic: There is a box labeled starting number, with a 4 inside. then three boxes to its right. The one next to it has a -2, and the following one a x3. Then the final box, labelled answer, reads 6.
+The question then asks: How would this calculation be written?
+A. (4 - 2 x 3) = 6
+B. 4 - 2 x 3 = 6
+C. (4 - 2) x 3 = 6
+D. 4 - (2 x 3) = 6",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Basic Arithmetic, Written Subtraction
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 3 problems so far.
+The student's average confidence so far is 75.
+The student has answered 67% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -1.27
+Student Extraversion: -0.613
+Student Agreeableness: -0.503
+Student Conscientiousness: -0.829
+Student Neuroticism: 0.73
+Student Openness: -2.092
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 6
+Frustration: 9
+Boredom: 5
+Curiosity/Interest: 0
+
+Engagement: 0"
+30,"Tom and Katie are talking about differnt ways of writing the expression on the right:
+The expression reads 8g + 20
+Tom says you could write it as 2(4g + 10)
+Katie says you could write it as 8(g + 5)
+Who is correct
+A. Only Tom
+B. Only Katie 
+C. Both Tom and Katie
+D. Neither is correct",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Straight Line Graphs, Other Graphs, Equation of a Circle, Graphical Solution of Simultaneous Equations
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 16 problems so far.
+The student's average confidence so far is 66.
+The student has answered 56% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 1.288
+Student Extraversion: -0.235
+Student Agreeableness: -1.73
+Student Conscientiousness: -0.894
+Student Neuroticism: -0.599
+Student Openness: -1.737
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 9
+Frustration: 5
+Boredom: 4
+Curiosity/Interest: 3
+
+Engagement: 3"
+64,"How many pairs of parallel sides does this shaepe have 
+{The shape is a parallelogram}
+A. 0
+B. 1
+C. 2
+D. 4",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Quadratic Graphs, Plotting Quadratics from Tables of Values
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 1 problems so far.
+The student's average confidence so far is 100.
+The student has answered 0% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 1.693
+Student Extraversion: 2.439
+Student Agreeableness: -0.509
+Student Conscientiousness: 1.241
+Student Neuroticism: 1.394
+Student Openness: 1.175
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 10
+Frustration: 5
+Boredom: 7
+Curiosity/Interest: 0
+
+Engagement: 9"
+69,"(2 + 10 x 3)/4
+A. 9.5
+B. 8
+C. 30.5
+D. 9",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Quadratic Equations, Solving Equations
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is NA.
+The student has answered 14% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.873
+Student Extraversion: 0.054
+Student Agreeableness: -0.368
+Student Conscientiousness: -0.48
+Student Neuroticism: 0.812
+Student Openness: 2.223
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 1
+Frustration: 5
+Boredom: 2
+Curiosity/Interest: 8
+
+Engagement: 9"
+80,"The question shows a number line with numbers labelled from -10 to 10 on unit increments. There is a red arrow pointing from -2 to 8
+Which of the following two calculations are represented by the arrow above?
+A. 10-2 = 8 and 10+8 = -2
+B. -1 + 10 = 8 and 8 - 10 = -2
+C. -2 + 8 = 10 and -2 -8 = -10 
+D. -2 -10 = 8 and 8 + 10 = -2",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, BIDMAS, Basic Arithmetic
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 2 problems so far.
+The student's average confidence so far is 88.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -1.481
+Student Extraversion: -0.133
+Student Agreeableness: 0.19
+Student Conscientiousness: -0.159
+Student Neuroticism: -0.287
+Student Openness: -1.622
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 1
+Frustration: 1
+Boredom: 6
+Curiosity/Interest: 5
+
+Engagement: 8"
+87,"The question shows an analog clock at 6:45.
+After their evening meal, Jack and Becky both look at their watches.
+Jack says the time is 7.45 pm
+Becky says the time is 06:45
+Who is correct?
+A. Only Jack
+B. Only Becky
+C. Both Jack and Becky are correct
+D. Both jack and Becky are incorrect",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Perimeter, Perimeter and Area
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 2 problems so far.
+The student's average confidence so far is 75.
+The student has answered 0% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: 2.159
+Student Extraversion: -1.089
+Student Agreeableness: 0.894
+Student Conscientiousness: -0.446
+Student Neuroticism: -0.782
+Student Openness: 0.452
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 1
+Boredom: 5
+Curiosity/Interest: 3
+
+Engagement: 3"
+93,"The question shows an image of three squares in grid, There are two side by side in the top, of heght 5 and width 17. Below the left one, theres another square, with the same measurements.
+Which calculation could the following diagram represent an efficient way of doing?
+A. 34 x 10
+B. 34 x 5
+C. (2 x 17) + (2 x 5)
+D. 17 x 5",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Area of Simple Shapes, Perimeter and Area, Compound Area, Maths-Others, Perimeter and Area-Others
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 13 problems so far.
+The student's average confidence so far is NA.
+The student has answered 54% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.058
+Student Extraversion: -1.31
+Student Agreeableness: 0.421
+Student Conscientiousness: 0.158
+Student Neuroticism: -0.437
+Student Openness: 0.375
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 9
+Frustration: 2
+Boredom: 10
+Curiosity/Interest: 4
+
+Engagement: 1"
+95,"Construct the following triangle
+Shows triangle ABC with side lengths AB = 7, BC = 8, and AC = 6
+Measure Angle ACB
+What is its value? 
+A. 76
+B. 47
+C. 58
+D. 117",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Indices, Powers and Roots, Algebra, Writing and Simplifying Expressions, Laws of Indices, Multiplying Terms, Dividing Terms
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 100.
+The student has answered 40% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.17
+Student Extraversion: -1.692
+Student Agreeableness: 0.524
+Student Conscientiousness: 1.922
+Student Neuroticism: 1.208
+Student Openness: -0.175
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 9
+Frustration: 0
+Boredom: 10
+Curiosity/Interest: 3
+
+Engagement: 8"
+134,"The item shows a celcius scale from -10 to 10, on increments of 1. There are two horizontal lines at 6 and -3, and labeled between them an arrow pointing from -3 to 6 labelled +9.
+Which of the following calculations is represented on the thermometer?
+A. -3 + 9 = 6 
+B. 3+6=9 
+C. 6+9=-3 
+D. -3+6=9",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Angles, Measuring Angles
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 9 problems so far.
+The student's average confidence so far is NA.
+The student has answered 89% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: 0.186
+Student Extraversion: 1.755
+Student Agreeableness: 0.111
+Student Conscientiousness: 1.398
+Student Neuroticism: 0.731
+Student Openness: -0.149
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 0
+Frustration: 1
+Boredom: 0
+Curiosity/Interest: 0
+
+Engagement: 3"
+135,"What can you say about the areas of the two squares?
+The figure shows a grid. Above theres a blue square of side length three. Below it a square rhombus, with diagonals of size 4
+A. The blue square has a larger area
+B. The red square has a larger area
+C. The areas are the same
+D. It is impossible to say without measuring",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+
+The question is about: Maths, Algebra, Algebraic Fractions, Adding and Subtracting Algebraic Fractions
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is 79.
+The student has answered 50% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.477
+Student Extraversion: -0.485
+Student Agreeableness: -0.191
+Student Conscientiousness: -0.439
+Student Neuroticism: -0.072
+Student Openness: 0.878
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 7
+Frustration: 6
+Boredom: 9
+Curiosity/Interest: 8
+
+Engagement: 0"
+146,"Jo and Paul are talking about constructing triangles.
+Jo says you need 2 side lengths in order to construct a triangle.
+Paul says you need a protractor to construct a triangle.
+Who is correct?
+A. Only Jo
+B. Only Paul
+C. Both Jo and Paul
+D. Neither is correct",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Angles, Bearings
+Did the student get the question right? No
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 4 problems so far.
+The student's average confidence so far is 81.
+The student has answered 75% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.625
+Student Extraversion: 0.771
+Student Agreeableness: -0.514
+Student Conscientiousness: 0.339
+Student Neuroticism: 1.052
+Student Openness: 0.958
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 7
+Frustration: 6
+Boredom: 0
+Curiosity/Interest: 8
+
+Engagement: 5"
+169,"Which of the following numbers could replace the shapes?
+The item shows a venn diagram. The larger circle is labelled multiples of {triangel}. The smaller circle inside is a subset, labelled multiples of {square}
+A. triangle = 8, square = 12
+B. triangle = 12 , square = 8
+C. triangle = 8, square = 4
+D. triangle = 4, square = 8",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Pictogram, Data Representation
+Did the student get the question right? No
+What was the student's confidence for this question? 0 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 50.
+The student has answered 86% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.346
+Student Extraversion: 0.202
+Student Agreeableness: -1.627
+Student Conscientiousness: 0.246
+Student Neuroticism: -0.002
+Student Openness: 0.037
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 7
+Frustration: 10
+Boredom: 4
+Curiosity/Interest: 10
+
+Engagement: 5"
+187,"7 × 12 = 32 + 52
+4X7X12= {star}
+What should replace the star to preserve equality?
+A. 4(32 + 52)
+B. 32 + 52 x 4
+C. 4 x 32 + 52
+D. 32 + 52 + 4",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Fractions, Fractions of an Amount
+Did the student get the question right? No
+What was the student's confidence for this question? NA 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is NA.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.828
+Student Extraversion: -0.56
+Student Agreeableness: 0.162
+Student Conscientiousness: 0.229
+Student Neuroticism: 1.219
+Student Openness: 0.255
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 9
+Frustration: 10
+Boredom: 8
+Curiosity/Interest: 0
+
+Engagement: 5"
+219,"Which of the following symbols should go in the box so that the number sentence is correct?
+(3)^2 + (-16) [blank] (-5)^2
+A. >
+B. = 
+C. <
+D. ≤",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Upper and Lower Bounds, Rounding and Estimating
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 8 problems so far.
+The student's average confidence so far is NA.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.31
+Student Extraversion: 1.944
+Student Agreeableness: 1.333
+Student Conscientiousness: 1.603
+Student Neuroticism: 0.122
+Student Openness: -1.197
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 6
+Frustration: 9
+Boredom: 2
+Curiosity/Interest: 6
+
+Engagement: 0"
+235,"Points P, Q and Rare equally spaced along the line segment.
+The coordinates of P and R
+are marked on the diagram.
+P = (-3,6), R = (1,-2). Q lies in the top left quadrant.
+What are the coordinates of Q?
+A. (-1,3)
+B. (-2,4)
+C. (-1,2)
+D. (-2,2)",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Basic Arithmetic, Mental Multiplication and Division
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 10 problems so far.
+The student's average confidence so far is 88.
+The student has answered 70% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 0.158
+Student Extraversion: 1.353
+Student Agreeableness: -0.355
+Student Conscientiousness: -1.471
+Student Neuroticism: 0.092
+Student Openness: 0.966
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 1
+Frustration: 6
+Boredom: 4
+Curiosity/Interest: 7
+
+Engagement: 10"
+278,"Jo and Paul are trying to write calculations based on the diagram on the left.
+The diagram shows a number line labelled at -3 and 12, and there is a red arrow pointing from 12 to -3, labelled -15
+Jo writes: 12 - 15 = -3
+Paul writes: (-3) + 15 = 12
+Who is correct?
+A. Only Jo
+B. Only Paul
+C. Both Jo and Paul
+D. Neither is correct",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Straight Line Graphs, Parallel Lines
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 1 problems so far.
+The student's average confidence so far is 50.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 1.559
+Student Extraversion: -0.691
+Student Agreeableness: 1.266
+Student Conscientiousness: -0.39
+Student Neuroticism: -1.964
+Student Openness: -1.53
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 10
+Frustration: 9
+Boredom: 6
+Curiosity/Interest: 5
+
+Engagement: 3"
+284,"Jack is thinking of a number.
+It is a prime number and it is a multiple of 7.
+What is Jack's number?
+A. 17
+B. 7
+C. 49
+D. 1",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Inequalities, Graphing Linear Inequalities (Shading Regions)
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 8 problems so far.
+The student's average confidence so far is 72.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 0.565
+Student Extraversion: -0.594
+Student Agreeableness: -0.631
+Student Conscientiousness: 0.643
+Student Neuroticism: 0.981
+Student Openness: -0.309
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 6
+Boredom: 4
+Curiosity/Interest: 1
+
+Engagement: 4"
+289,"In the Indian number svstem
+8 00 00 000 =
+A. eighty crores
+B. eight crores
+C. eighty lakhs
+D. eight lakhs",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Volume and Surface Area, Surface Area of Prisms
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 9 problems so far.
+The student's average confidence so far is NA.
+The student has answered 56% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.988
+Student Extraversion: -1.137
+Student Agreeableness: -0.927
+Student Conscientiousness: -0.204
+Student Neuroticism: -0.701
+Student Openness: -0.615
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 8
+Boredom: 1
+Curiosity/Interest: 1
+
+Engagement: 1"
+298,"Which protractor is positioned correctly to most easily measure the obtuse angle below shown in red)?
+A and B show protractors. A has a red line at 0/180 on the left, and 110/70 on the right. B has a red line at 70/110 on the left and 180/0 on the right.
+A. A
+B. B
+C. Both
+D. Neither",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Length Scale Factors in Similar Shapes, Similarity and Congruency
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 80.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: 0.411
+Student Extraversion: -0.223
+Student Agreeableness: -2.931
+Student Conscientiousness: -0.085
+Student Neuroticism: -1.339
+Student Openness: 1.115
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 1
+Frustration: 7
+Boredom: 0
+Curiosity/Interest: 8
+
+Engagement: 5"
+314,"What number and sign belogn in the box?
+-5 [blank] = -9
+A. -4
+B. +4
+C. -14
+D. +14",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Indices, Powers and Roots, Squares, Cubes, etc
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 3 problems so far.
+The student's average confidence so far is NA.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: -1.24
+Student Extraversion: -0.955
+Student Agreeableness: 0.815
+Student Conscientiousness: 0.369
+Student Neuroticism: -0.308
+Student Openness: -0.787
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 0
+Boredom: 0
+Curiosity/Interest: 0
+
+Engagement: 2"
+342,"""Square numbers have an odd number of factors""
+Is this statement...
+A. always true
+B. sometimes true
+C. never true
+D. Impossible to say",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Perimeter, Perimeter and Area
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is 88.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Female
+Student IQ: -1.638
+Student Extraversion: 0.556
+Student Agreeableness: -1.189
+Student Conscientiousness: -0.009
+Student Neuroticism: 0.248
+Student Openness: 1.021
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 8
+Frustration: 6
+Boredom: 10
+Curiosity/Interest: 10
+
+Engagement: 0"
+346,"1065 x 8 = 
+A. 800 + 0 + 480 + 40
+B. 8000 + 0 + 480 + 40
+C. 800 + 480 + 30
+D. 1000 +60 + 5",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Basic Trigonometry, Non Right-angled Triangles (Sine and Cosine Rules)
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 60.
+The student has answered 60% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.82
+Student Extraversion: -0.746
+Student Agreeableness: 1.074
+Student Conscientiousness: -0.759
+Student Neuroticism: -0.761
+Student Openness: 0.463
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 6
+Boredom: 5
+Curiosity/Interest: 0
+
+Engagement: 5"
+423,"(-4) x (-3) + (-4) x (-7) = (-4) x ( (blank1) + (blank2)) = (blank3)
+What belongs in the boxes?
+A. 3, 7, -40
+B. 3, 7, 40
+C. -3, -7, -40
+D. -3, -7, 40",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, 3D Shapes, Names and Properties of 3D Shapes
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 17 problems so far.
+The student's average confidence so far is 88.
+The student has answered 71% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.559
+Student Extraversion: -1.953
+Student Agreeableness: 0.383
+Student Conscientiousness: 0.92
+Student Neuroticism: 0.17
+Student Openness: -0.575
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 1
+Boredom: 4
+Curiosity/Interest: 9
+
+Engagement: 9"
+432,"What is the area of this shape?
+The shape is a paralellogram inside of a grid. it has side lengths of 3, and the other sides are slanted, with the length of the hypothenuse of a triangle of base 2 and height 1.
+A. 6
+B. 7
+C. 4
+D. 7",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Angles, Congruency in Triangles, Similarity and Congruency, Angles in Triangles
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is NA.
+The student has answered 83% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.924
+Student Extraversion: -2.715
+Student Agreeableness: -0.799
+Student Conscientiousness: 0.334
+Student Neuroticism: -0.915
+Student Openness: 0.632
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 0
+Frustration: 8
+Boredom: 0
+Curiosity/Interest: 6
+
+Engagement: 10"
+438,"""I started with 12 then subtracted 8. Then I multiplied by 3.
+Then ladded on 2""
+Which of the following calculations fits this description?
+A. (12 - 8) × 3 + 2
+B. 12 - 8×3 + 2
+C. (12 - 8) × (3 + 2)
+D. 12 - (8 × 3) + 2",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Basic Arithmetic, Mental Addition and Subtraction
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is 100.
+The student has answered 50% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.882
+Student Extraversion: 1.818
+Student Agreeableness: -1.234
+Student Conscientiousness: 0.53
+Student Neuroticism: 0.852
+Student Openness: -0.012
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 6
+Frustration: 8
+Boredom: 5
+Curiosity/Interest: 3
+
+Engagement: 0"
+491,"In the Indian number system
+2 00 00 000 =
+A. Two crores
+B. twenty crores
+C. two lakhs
+D. twenty lakhs",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Indices, Powers and Roots, Squares, Cubes, etc, Square Roots, Cube Roots, etc
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 9 problems so far.
+The student's average confidence so far is 86.
+The student has answered 67% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: -0.434
+Student Extraversion: -0.364
+Student Agreeableness: -1.161
+Student Conscientiousness: -0.027
+Student Neuroticism: -0.396
+Student Openness: 0.22
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 1
+Boredom: 8
+Curiosity/Interest: 8
+
+Engagement: 8"
+501,"Which angle is vertically opposite to angle p?
+{The image shows two lines that are somewhat horizontal, which are bisected by a somewhat vertical line. The top intersection has angles a, c, b, and p, starting from the top left quadrant around the vertex. The top left angle of the bottom intersection is labelled d}
+A. 
+B. 
+C.
+D.",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Probability of Single Events, Probability
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is 67.
+The student has answered 83% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.246
+Student Extraversion: 1.37
+Student Agreeableness: -1.674
+Student Conscientiousness: 0.42
+Student Neuroticism: 1.642
+Student Openness: -0.303
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 1
+Boredom: 6
+Curiosity/Interest: 2
+
+Engagement: 10"
+526,"Describe the movements to get from
+(5,-2) to (0,1)
+A. West 5 squares, north 3 squares
+B. West 5 squares, south 1 square
+C. East 5 squares, south 3 squares
+D. West 5 squares, north 4 squares",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Units of Measurement, Volume and Capacity Units
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 75.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 0.24
+Student Extraversion: 1.13
+Student Agreeableness: 0.839
+Student Conscientiousness: 0.627
+Student Neuroticism: 1.855
+Student Openness: 1.09
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 0
+Boredom: 1
+Curiosity/Interest: 8
+
+Engagement: 9"
+553,"Dots have been arranged in these patterns:
+Pattern 1 shows an L shape of dots of height 4 and width 3
+Pattern 2 is the same as pattern 1 but one column of 4 dots is added to the left of it, it still looks like an L
+Pattern 3 is the same as patter 2, but with yet another column.
+Pattern 4 is the same as pattern 3, but with yet another column.
+How many dots in Pattern 4?
+A. 18
+B. 24
+C. 20
+D. 16",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Factors, Multiples and Primes, Multiples and Lowest Common Multiple
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 75.
+The student has answered 86% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Female
+Student IQ: 1.792
+Student Extraversion: -1.002
+Student Agreeableness: -1.154
+Student Conscientiousness: -0.249
+Student Neuroticism: 0.095
+Student Openness: 1.421
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 0
+Frustration: 5
+Boredom: 0
+Curiosity/Interest: 5
+
+Engagement: 8"
+565,"Tom and Katie are arguing about the line segments on the right.
+Tom says they are parallel.
+Katie says they are the same length.
+Segment 1 goes from (1, -2) to (5, 3)
+Segment 2 goes from (-2, 2) to (3, 6)
+Who is correct?
+A.Only Tom
+B. Only Katie
+C. Both Tom and Katie
+D. Neither is correct",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Factors, Multiples and Primes, Multiples and Lowest Common Multiple
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 100.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -1.117
+Student Extraversion: 1.177
+Student Agreeableness: -0.918
+Student Conscientiousness: 0.939
+Student Neuroticism: -1.531
+Student Openness: 1.509
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 1
+Boredom: 5
+Curiosity/Interest: 4
+
+Engagement: 1"
+567,"Four students have measured this angle.
+Which student is the most accurate?
+There is a picture of a protractor measuring a 96 degree angle.
+A. 96
+B. 84
+C. 76
+D. 104",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Fractions, Fractions of an Amount
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 100.
+The student has answered 40% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.984
+Student Extraversion: -0.476
+Student Agreeableness: 0.022
+Student Conscientiousness: 0.118
+Student Neuroticism: 0.531
+Student Openness: -0.373
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 10
+Boredom: 2
+Curiosity/Interest: 7
+
+Engagement: 10"
+579,"2p =
+Using the diagram, which of the following correctly completes the equation above?
+The diagram shows a set of rectangles totalling the same lenght. The first row shows 3 rectangles, each of which is worth p.
+The second row shows 4 rectangles, each of which is worth g
+The third row shows 6 rectangles, each of which is worth r
+The second row shows 12 rectangles, each of which is worth w
+A. 3g
+B. 5r
+C. 8w
+D. 8r",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Basic Arithmetic, Place Value
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 1 problems so far.
+The student's average confidence so far is 100.
+The student has answered 100% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 1.724
+Student Extraversion: 0.878
+Student Agreeableness: -0.454
+Student Conscientiousness: 0.797
+Student Neuroticism: 0.959
+Student Openness: 1.513
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 10
+Boredom: 1
+Curiosity/Interest: 6
+
+Engagement: 3"
+611,"Using the key on the right, which of the following symbols should replace the star in terms of length?
+r [star] p + q
+The diagram shows a grid of points. there are four segments labelled r which connect points that 2 away in one direction, and one away in the other. There are 2 p segments that are one away in one direction. and there are 2 q segments that are one away in each direction, (are diagonals)
+A. >
+B. <
+C. = 
+D. Need more information",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Writing and Simplifying Expressions, Dividing Terms
+Did the student get the question right? No
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 16 problems so far.
+The student's average confidence so far is 98.
+The student has answered 88% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.067
+Student Extraversion: 0.216
+Student Agreeableness: 0.589
+Student Conscientiousness: 0.907
+Student Neuroticism: 1.662
+Student Openness: 1.737
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 4
+Frustration: 4
+Boredom: 6
+Curiosity/Interest: 4
+
+Engagement: 0"
+616,"How many factors does 11 have?
+A. 0
+B. 1
+C. 2
+D. 11",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Angles, Angles in Polygons
+Did the student get the question right? No
+What was the student's confidence for this question? NA 
+
+About the student's learning session so far:
+This student has worked on 4 problems so far.
+The student's average confidence so far is NA.
+The student has answered 75% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 1.12
+Student Extraversion: -0.84
+Student Agreeableness: 0.127
+Student Conscientiousness: 2.345
+Student Neuroticism: -2.53
+Student Openness: -0.587
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 10
+Frustration: 1
+Boredom: 8
+Curiosity/Interest: 6
+
+Engagement: 10"
+696,"""Common multiples of 2, 3, and 5 are also multiples of 30""
+Is this statement...
+A. always true
+B. sometimes true
+C. never true
+D. impossible to say",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Geometry and Measure, Units of Measurement, Rounding and Estimating, Length Units, Estimation
+Did the student get the question right? No
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is NA.
+The student has answered 71% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.057
+Student Extraversion: 1.596
+Student Agreeableness: -1.078
+Student Conscientiousness: 2.106
+Student Neuroticism: -1.378
+Student Openness: 1.589
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 10
+Frustration: 6
+Boredom: 6
+Curiosity/Interest: 2
+
+Engagement: 3"
+734,"Construct the following shape.
+The image shows a rhombus with a horizontal diagonal of 24 cm, and a side length of 15cm. Tick marks show that all sides are the same length.
+Draw in the other diagonal.
+What is the length of this diagonal?
+A. 30 cm
+B. 20 cm
+C. 24 cm
+D. 18 cm",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Fractions, Fractions of an Amount
+Did the student get the question right? No
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 5 problems so far.
+The student's average confidence so far is 50.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.705
+Student Extraversion: 0.026
+Student Agreeableness: 0.21
+Student Conscientiousness: -0.296
+Student Neuroticism: -0.071
+Student Openness: 0.261
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 1
+Frustration: 3
+Boredom: 7
+Curiosity/Interest: 9
+
+Engagement: 7"
+756,"Rectangle P has been enlarged by a scale factor of 2 to give rectangle Q.
+The image shows rectangle P with height 7, and width 5. the star denotes the width of rectangle Q.
+What length should replace the star?
+A. 10 cm
+B. 14 cm
+C. 7 cm
+D. 15 cm",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Data Collection, Types of Data and Questionnaires
+Did the student get the question right? No
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 6 problems so far.
+The student's average confidence so far is 50.
+The student has answered 0% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.838
+Student Extraversion: -0.355
+Student Agreeableness: -1.606
+Student Conscientiousness: -1.881
+Student Neuroticism: -0.058
+Student Openness: -0.887
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 3
+Boredom: 4
+Curiosity/Interest: 6
+
+Engagement: 3"
+761,"The image shows an angle labelled y, and the rest of the space around the vertex of the angle is labelled 4y. 
+What is the size of the angle y
+A. 90
+B. 72
+C. 60
+D. Not enough information.",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Decimals, Adding and Subtracting with Decimals
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 14 problems so far.
+The student's average confidence so far is 98.
+The student has answered 93% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.98
+Student Extraversion: 0.289
+Student Agreeableness: 0.672
+Student Conscientiousness: -0.951
+Student Neuroticism: -0.597
+Student Openness: 1.896
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 8
+Boredom: 0
+Curiosity/Interest: 6
+
+Engagement: 3"
+789,"The product of two numbers is -30.
+What could the two numbers be?
+A. -15 and -2
+B. -20 and -10
+C. -6 and 6
+D. -30 and 0",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, 3D Shapes, Isometric Drawings
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 1 problems so far.
+The student's average confidence so far is 100.
+The student has answered 0% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 1.257
+Student Extraversion: 0.062
+Student Agreeableness: 1.414
+Student Conscientiousness: -0.841
+Student Neuroticism: -0.412
+Student Openness: -1.312
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 9
+Frustration: 8
+Boredom: 9
+Curiosity/Interest: 7
+
+Engagement: 2"
+791,"8^2 = 
+A. 82
+B. 64
+C. 16
+D. 10",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Histogram, Data Representation
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 61.
+The student has answered 43% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -1.874
+Student Extraversion: -0.719
+Student Agreeableness: -1.5
+Student Conscientiousness: 3.037
+Student Neuroticism: -0.889
+Student Openness: -0.769
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 2
+Frustration: 8
+Boredom: 3
+Curiosity/Interest: 5
+
+Engagement: 3"
+802,"The image shows a line on which there are two angles, p on the left, and q on the right. 
+Which of the following is true?
+A. p + q = 90
+B. p + q = 100
+C. p + q = 180
+D. p + q = 360",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Linear Equations, Solving Equations
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 10 problems so far.
+The student's average confidence so far is 98.
+The student has answered 80% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.395
+Student Extraversion: 1.358
+Student Agreeableness: -1.98
+Student Conscientiousness: 0.09
+Student Neuroticism: 0.5
+Student Openness: 0.292
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 0
+Frustration: 2
+Boredom: 8
+Curiosity/Interest: 8
+
+Engagement: 1"
+803,"2.1 × 400 =
+A. 810
+B. 8400
+C. 840
+D. 210",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Rearranging Formula and Equations, Formula
+Did the student get the question right? Yes
+What was the student's confidence for this question? 75 
+
+About the student's learning session so far:
+This student has worked on 13 problems so far.
+The student's average confidence so far is 69.
+The student has answered 92% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.565
+Student Extraversion: -1.325
+Student Agreeableness: -0.971
+Student Conscientiousness: 0.817
+Student Neuroticism: 0.909
+Student Openness: -0.921
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 4
+Boredom: 5
+Curiosity/Interest: 9
+
+Engagement: 1"
+819,"a, b and c are different numbers
+frac{a + b}{C} = (a + b) ÷ c
+Is the above relationship...
+A. always true
+B. sometimes true
+C. never true
+D. Need more information",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Algebra, Straight Line Graphs, Parallel Lines
+Did the student get the question right? No
+What was the student's confidence for this question? 25 
+
+About the student's learning session so far:
+This student has worked on 10 problems so far.
+The student's average confidence so far is 58.
+The student has answered 50% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.996
+Student Extraversion: 0.803
+Student Agreeableness: 0.358
+Student Conscientiousness: 2.004
+Student Neuroticism: 1.651
+Student Openness: -0.643
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 3
+Frustration: 2
+Boredom: 9
+Curiosity/Interest: 6
+
+Engagement: 6"
+833,"There is a table, labelled temperature in C.
+The two columns are 1pm and 1am
+monday: +5 and -1 for 1pm and 1 am respectively
+tuesday: +8 and 0
+wednesday: +6 and -4
+thursday: +7 and -2
+friday: +3 and -6
+Which of the following calculations would correctly work out the difference between the temperature at 1pm on Thursday and the temperature at 1am on Wednesday?
+A. (-4) + 7
+B. 7 - (-4)
+C. 7 + (-4)
+D. 7 - 4",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Data Processing, Range and Interquartile Range from a List of Data
+Did the student get the question right? No
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 82.
+The student has answered 43% questions correctly so far.
+
+About the student:
+Student age: 11
+Student gender: Male
+Student IQ: 0.043
+Student Extraversion: 0.845
+Student Agreeableness: -0.495
+Student Conscientiousness: -1.794
+Student Neuroticism: 0.003
+Student Openness: -1.399
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 5
+Frustration: 8
+Boredom: 5
+Curiosity/Interest: 9
+
+Engagement: 10"
+852,"n x 5 ≥ n/5
+If n can represent any number, is the statment above...
+A. always true
+B. sometimes true
+C. never true
+D. need more information",2,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Fractions, Multiplying Fractions
+Did the student get the question right? No
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 9 problems so far.
+The student's average confidence so far is 100.
+The student has answered 33% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: 0.613
+Student Extraversion: 0.691
+Student Agreeableness: 2.078
+Student Conscientiousness: -0.532
+Student Neuroticism: -1.062
+Student Openness: 0.2
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 7
+Frustration: 8
+Boredom: 3
+Curiosity/Interest: 0
+
+Engagement: 2"
+868,"Which of the following statements is true
+when n = -2?
+A. 3n = 4n - 2
+B. 3n < 4n - 2
+C. 3n > 4n - 2
+D. Not enough information",3,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Data and Statistics, Pie Chart, Data Representation
+Did the student get the question right? No
+What was the student's confidence for this question? 0 
+
+About the student's learning session so far:
+This student has worked on 4 problems so far.
+The student's average confidence so far is 6.
+The student has answered 75% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: 1.442
+Student Extraversion: 0.659
+Student Agreeableness: 0.736
+Student Conscientiousness: 0.494
+Student Neuroticism: -0.572
+Student Openness: 2.926
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 8
+Frustration: 9
+Boredom: 0
+Curiosity/Interest: 4
+
+Engagement: 4"
+877,"What is the equation of this line?
+The image shows a cartesian plane with a vertical line at x = 3.
+A. X = 3
+B. y = 3
+C. ху = 3
+D. y = 3х",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Units of Measurement, Time
+Did the student get the question right? Yes
+What was the student's confidence for this question? 100 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 89.
+The student has answered 57% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Female
+Student IQ: -0.303
+Student Extraversion: -1.65
+Student Agreeableness: 0.132
+Student Conscientiousness: -0.288
+Student Neuroticism: -1.436
+Student Openness: -0.113
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 6
+Frustration: 2
+Boredom: 6
+Curiosity/Interest: 5
+
+Engagement: 9"
+904,"(0.1) / (-1/4) = 
+A. -4/10
+B. 0.4
+C. -1/40
+D. 1/40",1,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Number, Percentages, Repeated Percentages and Compound Interest
+Did the student get the question right? No
+What was the student's confidence for this question? 0 
+
+About the student's learning session so far:
+This student has worked on 11 problems so far.
+The student's average confidence so far is 66.
+The student has answered 27% questions correctly so far.
+
+About the student:
+Student age: 12
+Student gender: Male
+Student IQ: -0.191
+Student Extraversion: 0.118
+Student Agreeableness: -1.878
+Student Conscientiousness: -0.988
+Student Neuroticism: -0.122
+Student Openness: 0.221
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 4
+Frustration: 8
+Boredom: 4
+Curiosity/Interest: 1
+
+Engagement: 10"
+922,"Here is a number line:
+The image shows a number line labelled from -6 to +6 in two unit intervals. There is a question mark pointing somewhere between -4 and the next mark, which is unlabelled, but would be -3.
+Which of the following numbers could be indicated by the arrow?
+A. -3
+B. -2.75
+C. -4.5
+D. -3.5",4,"You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+
+ 
+ 
+The question is about: Maths, Geometry and Measure, Angles, Angles in Triangles
+Did the student get the question right? Yes
+What was the student's confidence for this question? 50 
+
+About the student's learning session so far:
+This student has worked on 7 problems so far.
+The student's average confidence so far is 43.
+The student has answered 71% questions correctly so far.
+
+About the student:
+Student age: 13
+Student gender: Male
+Student IQ: -0.142
+Student Extraversion: 0.002
+Student Agreeableness: 1.336
+Student Conscientiousness: -1.834
+Student Neuroticism: -1.774
+Student Openness: -0.373
+
+And this is the student's current motivational state. These are in a scale of 0 - 10
+Confidence: 10
+Frustration: 4
+Boredom: 7
+Curiosity/Interest: 10
+
+Engagement: 8"

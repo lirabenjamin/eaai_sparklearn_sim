@@ -1,0 +1,19 @@
+Student: Ugh, this question is just impossible. I don't understand how to do it.
+
+Tutor: That sounds frustrating. Can you show me what you've tried so far?
+
+Student: I tried to just break it up. 0.1 divided by -1 and then the same with the 4. But it's just a mess.
+
+Tutor: Let's take a step back first. When you divide by a fraction, it's the same as multiplying by its inverse. Do you remember that?
+
+Student: I think so... So would that be like multiplying 0.1 by -4?
+
+Tutor: You're on the right track. But remember the fraction is -1/4, not just -4. So you'd want to multiply 0.1 by -4/1 or simply -4.
+
+Student: Alright, let me try that... so I'm getting -0.4?
+
+Tutor: That looks correct. What's the closest answer to that among the choices?
+
+Student: Well, A is -4/10, which is the same as -0.4 right?
+
+Tutor: Yes, that's it! So A would be your answer.

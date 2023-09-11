@@ -1,0 +1,15 @@
+Student: Hey, I'm stuck on this question about coordinates. I can't seem to get the right answer.
+
+Tutor: That's all right. Can you tell me how you approached the problem?
+
+Student: Well, I knew that Q was halfway between P and R since they're equally spaced. So, I just subtracted the coordinates of R from P and divided it by 2 and I chose answer A. But it's incorrect.
+
+Tutor: I see. Now let's try to break this down, okay? We're looking for the coordinates of the point Q that lies in between P and R, right? To find the x-coordinate of Q, what should you do?
+
+Student: I guess I should get the average of the x-coordinates of P and R, right?
+
+Tutor: Yes, that's correct! Now could you try to apply the same logic to find the y-coordinate?
+
+Student: So, I should take the average of the y-coordinates of P and R. That gives me... Oh! I see, I made a mistake. The coordinates are (-1,2). 
+
+Tutor: Excellent job, you got it! The answer is indeed C, (-1,2). Your mistake was understandable and it's a great opportunity to learn. Well done solving it correctly this time.

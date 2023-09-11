@@ -1,0 +1,1 @@
+{"Confidence": 5, "Frustration": 2, "Boredom": 1, "Curiosity/Interest": 6, "Engagement": 8}

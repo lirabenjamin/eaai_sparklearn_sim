@@ -1,0 +1,1 @@
+{"Confidence": 6.5, "Frustration": 2.0, "Boredom": 3.0, "Curiosity/Interest": 7.0, "Engagement": 8.0}

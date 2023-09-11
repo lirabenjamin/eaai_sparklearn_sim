@@ -1,0 +1,23 @@
+Student: Hey, I'm kinda stuck on this problem.
+
+Tutor: No worries, let's see if we can work it out together. Could you tell me what the problem is about?
+
+Student: Well, it's a number line problem. There's this red arrow going from -2 to 8 and I have to figure out the calculations it represents.
+
+Tutor: Alright, could you tell me what the choices are?
+
+Student: Okay. A. 10-2 = 8 and 10+8 = -2, B. -1 + 10 = 8 and 8 - 10 = -2, C. -2 + 8 = 10 and -2 -8 = -10, D. -2 -10 = 8 and 8 + 10 = -2 
+
+Tutor: Good. Now let's consider where the arrow starts and where it ends, which are -2 and 8. Can you see a calculation that represents this?
+
+Student: Yeah, it seems like -2 + some number should give us 8...
+
+Tutor: Right. So which choice seems to fit that pattern? 
+
+Student: Looks like it is B. Since -1 + 10 equals 8 and 8 - 10 equals -2, both fit the direction of the arrow.
+
+Tutor: Great thought process! Do the calculations in the second part of each choice also make sense? 
+
+Student: Yeah, B fits here too because 8 - 10 does give -2. 
+
+Tutor: Excellent! You've figured it out. Fantastic job! Keep using this process as you go along.

@@ -1,0 +1,33 @@
+Student: Ugh, I keep getting stuck with this square problem. 
+
+Tutor: That's okay, we can work through this together. Can you tell me what you've done so far? 
+
+Student: Well, I just thought I had to compare the side lengths, and since the rhombus has a larger diagonal, I chose that its area would be bigger. But I guess that's not correct?
+
+Tutor: It's a common misconception. While the diagonals of the rhombus are longer, we need to consider how area is calculated. Do you remember the formula for the area of a square?
+
+Student: It's side length squared, right?
+
+Tutor: That's correct! Now, what's the formula for the area of a rhombus?
+
+Student: Isn't it like half the product of the diagonals or something?
+
+Tutor: Exactly! Half of the product of the diagonals. So, in the case of our rhombus with a diagonal of 4, what would the area be?
+
+Student: Umm, would it be 8?
+
+Tutor: Not quite, remember the diagonal is also serving as the two sides of the square. So, it would be 1/2 * 4 * 4.
+
+Student: Oh, so it's 8 actually.
+
+Tutor: Close, but remember we're multiplying 4 by 4, which gives us 16. Half of 16 is?
+
+Student: Oh, now I see...it would be 8.
+
+Tutor: Right! Now, how about the area of the blue square with side length 3?
+
+Student: That would be 9, because 3*3 is 9.
+
+Tutor: Bingo! So, now you can see that the blue square does indeed have a larger area than the red rhombus. 
+
+Student: I think I understand it now, thanks for explaining!

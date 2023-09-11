@@ -1,0 +1,21 @@
+Student: Uhh, hey. I don't get something here in this problem.
+
+Tutor: No problem at all. Could you please point out what's confusing you?
+
+Student: Well, there's this equation: (a + b) ÷ c and it says it's the same as frac{a + b}{C}. I was thinking maybe sometimes they might be the same, not always.
+
+Tutor: I understand why that might seem confusing. Let's see, can you think of what the division symbol represents in a mathematical context?
+
+Student: It's like dividing stuff, right? Like sharing or splitting?
+
+Tutor: Yes, exactly! Now think about a fraction. Isn't a fraction also about splitting something into parts?
+
+Student: Aha, right, it is. So both are about dividing. But does that mean they're the same all the time?
+
+Tutor: Good question! Knowing that both are division, do you think the relationship is always true, sometimes true, or never true?
+
+Student: I'm gonna guess... always true?
+
+Tutor: Bingo! That's correct. No matter what a, b, or c are, the fractional form is always equivalent to the division. Nice thinking there! 
+
+Student: Ah, got it. That makes sense. Thanks!

@@ -1,0 +1,27 @@
+Student: This question is tricky for me, I can’t figure out the length of the other diagonal in the rhombus.
+
+Tutor: Let's work through it together! What do you know about a rhombus and its diagonals?
+
+Student: Umm, I remember that diagonals of a rhombus are perpendicular bisectors of each other.
+
+Tutor: That's correct! Now, if we know one of the diagonals is 24 cm, how can we use the side length to find the other diagonal?
+
+Student: I remember something about the Pythagorean Theorem. But shouldn't we have a right angle triangle for that?
+
+Tutor: Yes, you're on the right track! If you draw in the other diagonal, it splits the rhombus into two right triangles. Can you tell me the lengths of two sides of one of the right triangles?
+
+Student: One side is half of 24 cm, which is 12 cm. The other side is the length of the rhombus, which is 15 cm.
+
+Tutor: Perfect! Now you can apply the Pythagorean theorem. Do you remember how it goes?
+
+Student: Yes, it's a square plus b square equals c square. So, this means (15^2) - (12^2) = c^2, right?
+
+Tutor: Spot on! Can you solve for c?
+
+Student: So c^2 equals 81, and if I take the square root of that, I get 9.
+
+Tutor: You're close, remember we want the length of the whole diagonal, not just half of it.
+
+Student: Oh I see, so the length of the whole diagonal must be twice of 9 cm, which is 18 cm!
+
+Tutor: Excellent, well done! Use this method to solve similar problems in the future. Keep practicing!

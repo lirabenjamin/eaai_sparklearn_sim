@@ -1,0 +1,21 @@
+Student: This question, I can't really understand how to find the temperature difference.
+
+Tutor: Sure thing! Can you tell me how you're trying to solve it? 
+
+Student: I don't know, I guess I'm supposed to subtract, but the negative temperatures are confusing me...
+
+Tutor: I see where the confusion is. Remember, we are trying to find the difference between two temperatures. So, we need to subtract. But if a number is negative? 
+
+Student: Then I guess we should add it instead? 
+
+Tutor: Exactly! So if we want to find the difference between 1pm on Thursday (+7) and 1am on Wednesday (-4), how would we do that?
+
+Student: Hmm.. so instead of subtracting the -4, I add it to 7? 
+
+Tutor: Right! So what's your final calculation?
+
+Student: So it would be 7 -(-4), is that the same as 7+4?
+
+Tutor: Yes, that's correct! You've got it.
+
+Student: Ahh, got it! Thanks for your help, I think I understand these temperature problems better now.

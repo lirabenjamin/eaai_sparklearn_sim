@@ -1,0 +1,31 @@
+Student: Ugh, I'm really stuck on this triangle question.
+
+Tutor: I'm here to help! Can you tell me what you've done so far?
+
+Student: Well, I drew the triangle with the sides as given, but I have no idea how to measure angle ACB.
+
+Tutor: Great start! Do you remember the cosine rule for finding an angle when we know all the sides of a triangle?
+
+Student: Oh yeah, is it cos(C) = (a² + b² - c²) / 2ab?
+
+Tutor: That's correct. Try to substitute the side lengths we know: AB = 7, BC = 8, and AC = 6.
+
+Student: Okay, so if I put these numbers in... I get cos(C) = (49 + 36 - 64) / (2 * 7 * 6)... which gives me... -0.08928.
+
+Tutor: Good job! You've found the cosine of angle C. But we aren't done. How would you find the actual value of the angle?
+
+Student: I should use the inverse cosine function, right?
+
+Tutor: Correct! Go ahead and calculate the inverse cosine of -0.08928.
+
+Student: Um, that gives me 95.14 degrees. But that's not one of the options.
+
+Tutor: Hmmm... it seems like there might be a misunderstanding. Let's look at the equation again. Can you tell me which side lengths corresponded to the variables a, b, and c you used?
+
+Student: I used AB for 'a', BC for 'b', and AC for 'c'.
+
+Tutor: Here is where the confusion lies. In the Cosine rule, c is the side opposite to the angle we're trying to find. In our case, angle C is ACB, so BC should be 'c'. Can you try calculating with this in mind?
+
+Student: Oh, I see now. When I do the calculation again, I get approximately 58 degrees. So, the correct answer should be option C.
+
+Tutor: Exactly! Good job! You've successfully applied the Cosine Rule to find the unknown angle.

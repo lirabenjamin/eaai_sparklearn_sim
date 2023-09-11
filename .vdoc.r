@@ -581,7 +581,9 @@ generate_prompt <- function(question_text, subject_text, IsCorrect, CorrectAnswe
                             frustration, boredom, curiosity, engagement) {
   
   prompt <- glue("
-  You are a simulator for an intelligent tutoring system. I will tell you a math question a student is working on, some information about the student and their interaction with the question, and you will generate a conversation between the student and the intelligent tutor. I will tell you some psychological characteristics of the student, but the tutor does not know them explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
+  You are a simulator for an intelligent tutoring system for math education. You simulate a conversation with a student that is asking specific math questions. The conversation should be back and forth and have around 5 to 10 turns. Try to let the student do more talking and try to figure out how to solve the Math question. The AI tutor should only write a sentence or two at a time. All the conversations with the student should be complete: Either because the student arrived at one answer or because the student decides to give up on the question.
+  
+  I will give you information about the question, about the student's learning sesssion so far, and about the students demographics and general psychological traits, as well as their particular motivational state and frame of mind at the present moment. The tutor does not know these explicitly, they are there just so that you can more accurately model the student. (All psychological variables are specified as z-scores, such that 0 is the mean and 1 is one standard deviation above the mean). Make sure that the student is asking for some help.
 
   This question:
   Question text: {question_text}
@@ -598,6 +600,8 @@ generate_prompt <- function(question_text, subject_text, IsCorrect, CorrectAnswe
   About the student:
   Student age: {student_age %>% round(0)}
   Student gender: {Gender}
+
+  The tutor does not know these information explicitly use it to model how the student would talk.
   Student IQ: {iq %>% round(3)}
   Student Extraversion: {extraversion%>% round(3)}
   Student Agreeableness: {agreeableness%>% round(3)}
@@ -605,23 +609,34 @@ generate_prompt <- function(question_text, subject_text, IsCorrect, CorrectAnswe
   Student Neuroticism: {neuroticism%>% round(3)}
   Student Openness: {openness%>% round(3)}
 
-  And this is the student's current motivational state. These are in a scale of 0 - 10
+  And this is the student's current motivational state. These are in a scale of 0 - 10. The tutor does not know these information explicitly use it to model how the student would talk.
   Confidence: {confidence}
   Frustration: {frustration}
   Boredom: {boredom}
-  Curiosity/Interest: {curiosity}\n
+  Curiosity/Interest: {curiosity}
   Engagement: {engagement}
+
+  IMPORTANT: MAKE SURE YOU GENERATE A COMPLETE MULTI-TURN CONVERSATION WITH THE STUDENT.
+
+  Here's an example of how a simulated conversation should look like:
+  Student: I can't get this problem
+  Tutor: What have you tried so far?
+  Student: I tried to break down the equation, but I'm not sure if I'm doing it right.
+  Tutor: Can you explain your thought process?
+  Student: I multiplied both sides by 2, but I'm not sure if that's right.
+  ... and so on.
   ")
   
   return(prompt)
 }
 
+item_text = read_csv("data/50_images/item_transcriptions - Sheet1.csv") %>% select(QuestionId = item_number, question_text = item_text)
 
 
 library(purrr)
 
 data50 = data50 %>%
-  mutate(question_text = "to be transcribed") %>%
+  left_join(item_text) %>%
   mutate(prompt = pmap(list(question_text, subject_text, IsCorrect, CorrectAnswer, Confidence, problems_so_far, 
                             cum_percent_confident, cum_percent_correct, student_age, Gender, iq, extraversion, 
                             agreeableness, conscientiousness, neuroticism, openness, confidence, 

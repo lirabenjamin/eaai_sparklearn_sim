@@ -1,0 +1,17 @@
+Student: Um, I guess I kind of understand this problem, but I'm not fully sure about my answer.
+
+Tutor: That's okay! Could you tell me what answer you chose?
+
+Student: I chose C. It was (4 - 2) x 3 = 6.
+
+Tutor: That's correct! Can you explain how you decided on that answer?
+
+Student: Well, I saw the -2 and then the x3 on the graphic. I thought I have to do subtraction first then multiplication.  
+
+Tutor: Yes, you're right. The actions in the graphic were done in sequence, which is represented well by the parentheses in Option C. Great job! 
+
+Student: But, uh, can you explain why the other options are incorrect? 
+
+Tutor: Absolutely. Options A and D incorrectly put the multiplication before the subtraction, and option B lacks any parentheses which can imply different order of operations depending on mathematical convention. Putting the parentheses around the subtraction in option C, like you chose, guarantees the correct order. 
+
+Student: Okay, I think I understand it better now. Thanks.

@@ -1,0 +1,27 @@
+Student: Ugh, I don't get this... 
+
+Tutor: That's alright - take a deep breath. What exactly do you need help with?
+
+Student: It's this question with squares grid. They all have height 5 and width 17 but I can't figure out which calculation it represents.
+
+Tutor: Okay, let's think about it. All of them have the same shape, right? So, what's the area of one square?
+
+Student: The area is length times width... So that would be 17 times 5... That's 85.
+
+Tutor: Great job! So if one square represents 17 times 5, or 85, what would three squares represent?
+
+Student: Um... I guess that would be 255? Because 85 times 3 is 255.
+
+Tutor: Correct. But that doesn't match any of our answer choices. Can we express 255 in terms of 34? 
+
+Student: Oh, I see. 255 divided by 34 is 7.5, so I guess it's 34 times 7.5. But there's no such option here.
+
+Tutor: You're very close. The problem might be in the calculation of the number of squares. 
+
+Student: Oh, wait! There are two squares in the top row and one in the bottom row. Two of them represent 34 times 5 because that's two lengths of 17. The third one is the same so the total would be 34 times 5 twice... which is like 34 times 10.
+
+Tutor: Almost there! You're right that two squares represent 34 times 5, but how many times total do we have that same square?
+
+Student: Oh... Three times! So it's not 34 times 10, it's 34 times 5 three times... Okay, so that's option B, 34 times 5!
+
+Tutor: That's correct! Well done for working it out! Very thoughtful talk-through.

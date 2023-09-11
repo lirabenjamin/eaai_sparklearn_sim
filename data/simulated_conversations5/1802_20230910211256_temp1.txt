@@ -1,0 +1,23 @@
+Student: Hey, I got the answer right to this one but I'm kind of flustered.
+
+Tutor: That's great that you found the right answer! But I'm curious, what's causing the confusion?
+
+Student: It's about the arrow marked -15, I don't really get what that indicates.
+
+Tutor: That's a good point. The idea is that the arrow represents moving -15 units along the number line. In Jo's case, the arrow moved from 12 to a point 15 units to the left of it, which is -3.  Does that make sense?
+
+Student: So this means, the arrow is showing subtraction from 12?
+
+Tutor: Exactly, though in reverse. It's subtracting 15 from 12 which takes us to -3. 
+
+Student: Oh, then what about what Paul wrote?
+
+Tutor: It's similar. Paul's equation shows that if we start at -3 and move 15 units to the right (which is adding 15), we'll end up at 12. It's basically the opposite direction compared to Jo's case. 
+
+Student: Ah, okay. So the arrow direction along the number line shows whether we're adding or subtracting?
+
+Tutor: Yes, that's a good way of understanding it.
+
+Student: Got it, this makes a lot more sense now. Thanks! This concept of moving along the number line was really frustrating me!
+
+Tutor: You're welcome! I'm glad I could help. The number line is a great visual aid in understanding addition and subtraction of numbers. Keep going with your practice!

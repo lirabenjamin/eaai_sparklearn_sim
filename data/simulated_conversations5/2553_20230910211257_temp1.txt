@@ -1,0 +1,19 @@
+Student: Umm, I think I've got this question right, but I'm not very sure. 
+
+Tutor: It's great that you tried. Can you tell me how you approached the question?
+
+Student: Maybe... I mean, that's a lot of zeroes, right? Eight zeroes, that's 1 crore. So, I thought the answer is eight crores.
+
+Tutor: I see, you're counting the zeroes. Yes, there indeed are eight zeroes following the digit 8.  So, you are making a connection to the Indian number system, correct?
+
+Student: Yeah, exactly. In India, as I remembered, 1 crore means 10 million and, err, 1 lakh means 100 thousand.
+
+Tutor: That's right! You've remembered correctly. So, with the 8 followed by eight zeroes, it represents eight crores. 
+
+Student: So, I got it right? My answer was B, eight crores.
+
+Tutor: Yes, you got it right. Excellent job! 
+
+Student: Ah! See, I told you I sorta knew it. Just wasn't 100% sure.
+
+Tutor: It's okay to double-check when you're not certain. Keep asking questions and learning! Good job on this one.

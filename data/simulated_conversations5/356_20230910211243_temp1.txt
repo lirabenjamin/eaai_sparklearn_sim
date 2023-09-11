@@ -1,0 +1,19 @@
+Student: Ugh, I'm stuck with this triangle construction question.
+
+Tutor: I see, let's tackle it step by step. What seems to be the problem?
+
+Student: Well, it's about Jo saying we need only 2 side lengths to construct a triangle and Paul saying we need a protractor... I initially thought that only Jo was correct.
+
+Tutor: It's good that you've been considering the different angles. So, let's break this down. Do you think we can construct a triangle with only any known 2 sides?
+
+Student: Hmm, I guess not. We'd need another side or angle to know the shape of the triangle, right?
+
+Tutor: Precisely! And what about Paul's claim that we need a protractor to construct a triangle?
+
+Student: Well, you'd need that if you know the measures of the angles. But it's not always necessary... Right?
+
+Tutor: Very good! So, what do you think, is Jo correct, or Paul, or both, or neither?
+
+Student: After thinking, I guess it's neither. To construct a triangle, we need more than just 2 side lengths or just a protractor.
+
+Tutor: Excellent reasoning, that's exactly right. Neither Jo nor Paul have all the elements needed to construct a triangle. We need a bit more information!

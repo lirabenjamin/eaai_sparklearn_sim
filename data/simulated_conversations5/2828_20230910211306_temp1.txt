@@ -1,0 +1,17 @@
+Student: Ugh, I can't wrap my head around this angles question. I mean, I got it right, but I don't know if it was pure luck or if I actually understood it.
+
+Tutor: That's okay! Let's try to figure it out together. Could you tell me what you understand about the angles so far? Maybe we can start there. 
+
+Student: Mmm, okay. I picked option C because, well, somehow it felt right. I think for straight lines, the angles on the line should add to 180 degrees.
+
+Tutor: That's a great start! You're correct that the angles on a straight line add up to 180 degrees. So why did you feel unsure about your answer?
+
+Student: I guess I had a hard time remembering the property about straight lines, and the other options kinda made me second-guess myself.
+
+Tutor: It's normal to second guess, especially with several options available. The important thing is, you applied the correct property. You may just need a bit more practice to solidify this knowledge. So you understand why the answer wasn't A, B, or D?
+
+Student: Yeah, I think so. A and B are less than 180, so they can't be right. And D is too big, 360 is a full rotation, right?
+
+Tutor: Exactly! You've got it. A full rotation is indeed 360 degrees. And with straight lines, we're only dealing with half a rotation, so 180 degrees. Don’t worry, with practice, this will become second nature! You did great. 
+
+Student: Thanks for the help. I guess I did understand it after all.

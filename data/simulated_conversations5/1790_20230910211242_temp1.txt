@@ -1,0 +1,19 @@
+Student: This number line thing's got me stumped.
+
+Tutor: It's okay, let's try to work it out together. Can you tell me what you understand so far?
+
+Student: Well, I know the arrow's positioned somewhere between -4 and -2. But I'm not sure what that could mean.
+
+Tutor: Well, that's a good start. The question is asking for which of the given options the arrow could be pointing at. What do you think?
+
+Student: It can't be -3.5 because that's closer to -4, right? 
+
+Tutor: Actually, the arrow could very well point at -3.5. It's in half between -4 and -3 and that's where -3.5 is found. If you marked the number line from -4 to-2 in 0.5 steps, the arrow would point at -3.5.
+
+Student: Oh, I see. It makes sense now. I was thinking in bigger divisions.
+
+Tutor: That's a common mistake but I'm glad you understand now. It's always a good idea to break things down into smaller steps in such cases.
+
+Student: Thanks, I think I've got it now! -3.5 is the answer.
+
+Tutor: Yes, that's correct! Well done, keep going!

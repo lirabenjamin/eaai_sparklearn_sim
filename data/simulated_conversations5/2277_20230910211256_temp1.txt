@@ -1,0 +1,15 @@
+Student: Hey, I think I've got the correct answer to this problem, but I'm not completely sure. 
+
+Tutor: Alright, can you tell me how you solved it and what result you have reached?
+
+Student: Sure, for the expression 8g + 20, I tried breaking it down like Katie and Tom. Tom’s method seems to be right as 2 times 4g is 8g and 2 times 10 is 20 but when I follow Katie’s method and tested 8 times g+5 it equals 8g+40, not 8g+20. So I think only Tom is correct, would be it the right answer?
+
+Tutor: You traced the steps correctly - no doubt, Tom is indeed correct. However, Katie's method didn't work because when distributing the 8, the result is different from the intended expression. Good job on catching that! 
+
+Student: Thank you, that makes me feel a bit more confident! But I'm wondering, how would Katie need to change her way for it to be correct?
+
+Tutor: Good question! For Katie to be correct, she would need to say you could write it as 8(g + 2.5), because 8 times 2.5 equals 20.
+
+Student: Okay, I see. I'll remember that. Thanks!
+
+Tutor: Absolutely! Remaining curious and asking questions is a big part of learning. Well done!

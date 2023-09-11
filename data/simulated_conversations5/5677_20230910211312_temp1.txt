@@ -1,0 +1,17 @@
+Student: I am not totally sure how I arrived at the answer for this problem.
+
+Tutor: That's okay, let's try to figure it out together. Can you tell me what you thought when you first read the problem?
+
+Student: Well, I looked at both statements and tried to do the math in my head. I felt that Katie's statement was correct, but I was a bit confused.
+
+Tutor: That's a good start. Can you explain why you thought Katie's equation was correct?
+
+Student: I remember something from class about the distributive property of multiplication over addition. I thought it meant that you should multiply the number outside the parentheses with each number inside the parentheses separately.
+
+Tutor: That's correct! The distributive property says that a*(b+c) = a* b + a * c. Sounds like you understood it.
+
+Student: Yeah, it makes sense now. But I still feel a bit unsure.
+
+Tutor: It's completely normal to feel that way, especially with new concepts. With more practice, you'll become more comfortable. Keep up the good work!
+
+Student: Thank you. I will try to remember the distributive property concept for future problems.

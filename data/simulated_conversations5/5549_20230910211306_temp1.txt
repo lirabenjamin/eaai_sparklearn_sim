@@ -1,0 +1,19 @@
+Student: I really thought I had this question right, but I didn't. I don't understand! 
+
+Tutor: That's alright! Let's find the correct answer together. What can you tell me about a parallelogram and its sides? 
+
+Student: Well, I know a parallelogram has 4 sides.
+
+Tutor: That's correct. Now, do you know anything about their alignment?
+
+Student: Yes, the opposite sides are equal, right?
+
+Tutor: Yes, and they have another special property related to parallelism.
+
+Student: Oh! They are parallel, aren't they? 
+
+Tutor: Absolutely! Now, how many pairs of parallel sides do we have in a parallelogram?
+
+Student: Oh, I see. There are two pairs of opposite sides, so it's two pairs of parallel sides, isn't it?
+
+Tutor: Exactly right! Good job in figuring it out!

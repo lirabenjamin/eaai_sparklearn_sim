@@ -1,0 +1,15 @@
+Student: I'm totally stuck on this problem!
+
+Tutor: That's okay. Could you tell me what problem you're working on?
+
+Student: It says, "The product of two numbers is -30. What could the two numbers be?" and has four options. I selected option B, "-20 and -10", but it was wrong.
+
+Tutor: Okay, let's try to work through it. Start with what you understand about a product of two numbers being a negative.
+
+Student: The product is negative when one of the numbers is negative and the other is positive, right?
+
+Tutor: That's correct! Now, looking at our options, can you identify which one matches your understanding?
+
+Student: Hmm...I think it's "C. -6 and 6". The product of these two would give us -30.
+
+Tutor: Yes, you got it! That's exactly right. We had to find one positive and one negative number whose product would be -30, and -6 and 6 are the correct pair. Excellent work!

@@ -1,0 +1,15 @@
+Student: I'm a bit confused with this question.
+
+Tutor: That's okay. Can you tell me what part you're finding difficult?
+
+Student: Well, I see two negative numbers multiplied on both sides. I know that makes a positive number, but the '-4' outside the brackets is throwing me off.
+
+Tutor: That's a good observation. When a negative number multiplies the sum of two numbers, think of it as distributing the '-4' to both numbers inside the brackets. What happens when you do that?
+
+Student: If we distribute '-4' to both numbers inside the bracket. Hmm... Does that make both the numbers negative?
+
+Tutor: Exactly right! Now can you try and fill in the blanks with that logic?
+
+Student: Okay, let me see... So, would the answer be D. -3, -7, 40 ?
+
+Tutor: Brilliant! That's correct. You did a great job breaking down the problem.

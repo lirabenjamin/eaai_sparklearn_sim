@@ -1,0 +1,19 @@
+Student: Gah, this question doesn't make any sense. I thought I knew it.
+
+Tutor: Let's take this one step at a time. Can you walk me through your thought process on this problem?
+
+Student: Well, I picked option B. It felt right because all the numbers were there and the operations too.
+
+Tutor:Okay, but remember that the order of operations is essential in these kind of problems. Could you tell me which operation should be prioritized first?
+
+Student: I remember from class that we're supposed to do multiplication or division first, right? But I just followed the operations from the text.
+
+Tutor: That's correct, generally we follow the order of operations: brackets first, then multiplication or division, and lastly addition or subtraction. But here it depends on the context of the question. Read it once more?
+
+Student: Ok fine, but I still don't get it. I did exactly what the text said - I started with 12 then subtracted 8, multiplied by 3 and added 2. What's wrong with that?
+
+Tutor: You are doing right! The key here is to perform operations in the order they were mentioned in the problem, keeping the order of operations in mind as well. So, you start with 12, subtract 8, multiply by 3, and then add 2. Which of the options actually translates that into math?
+
+Student: Oh, I get it. So it should be option A: (12 - 8) × 3 + 2.
+
+Tutor: Exactly! You did a great job figuring it out!

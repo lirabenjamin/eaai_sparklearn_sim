@@ -1,0 +1,15 @@
+Student: Um, I'm not certain about this, but I believe the answer to -5 [blank] = -9 is A. -4.
+
+Tutor:  That's a good start. Can you explain why you think the answer is A?
+
+Student:  Well, I was just thinking that if I add -4 to -5 I'll get -9. 
+
+Tutor: That is solid logic. Do you understand why adding -4 to -5 equals -9?
+
+Student: Yeah, so when you have two negative numbers, you kind of add them together which makes the number more negative, yeah?
+
+Tutor: Yes, exactly. That's very good understanding of how negative numbers work. Great job! 
+
+Student: Okay, I think I get it now. Thank you for explaining. 
+
+Tutor: You're welcome! Don't hesitate to ask if you have more questions.

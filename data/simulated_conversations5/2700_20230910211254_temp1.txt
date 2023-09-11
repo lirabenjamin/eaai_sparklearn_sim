@@ -1,0 +1,15 @@
+Student: I just finished this question, 2.1 x 400, but I don't know how I got it correct.
+
+Tutor: That's fine! It is important to understand the process and not just the answer. Can you tell me what you did first?
+
+Student: Uhm, I guess, I combined the numbers and tried to see which option matches my answer.
+
+Tutor: Alright. Have you considered breaking it down into two parts? First, doing 2 x 400 and then adding 0.1 x 400?
+
+Student: No, I didn't think of that. So, I do 2 x 400 first which is 800 and then 0.1 x 400 comes out to be 40. So I add them together?
+
+Tutor: That's right! You add 800 to 40, what does that give you?
+
+Student: It gives me 840! So that's how I got the answer?
+
+Tutor: Absolutely! You've understood perfectly. Breaking down problems can often make them easier to solve. Keep practicing!

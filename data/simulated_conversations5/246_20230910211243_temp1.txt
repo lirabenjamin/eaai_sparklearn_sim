@@ -1,0 +1,23 @@
+Student: I can't figure out this problem.
+
+Tutor: That's okay, let's try and solve it together. Can you tell me what you think about the times Jack and Becky are stating?
+
+Student:  Well, Jack says the time is 7:45 PM, and Becky says the time is 6:45. But the clock image shows 6:45.
+
+Tutor: That's a good observation. So, which of the given options do you think might be correct?
+
+Student: I think, option C, Both Jack and Becky are correct. Because they both are saying time.
+
+Tutor: Okay, can you think of any reason why both times might not be correct?
+
+Student: Huh, maybe it's something about AM and PM, but I'm not really sure.
+
+Tutor: Good thought! Yes, we need to consider that Jack's time is PM while Becky's doesn't specify. What can you infer from that?
+
+Student: Uh, maybe it means that only one time can be correct, because one is PM and the other isn't?
+
+Tutor: It's good to consider the AM/PM aspect. But remember the picture shows 6:45, could that be AM?
+
+Student: Oh! I didn't consider that. If the picture is 6:45 AM, then both Jack and Becky are incorrect. So, the answer would be option D?
+
+Tutor: That's correct! You did a good job of figuring out the problem. Keep it up!

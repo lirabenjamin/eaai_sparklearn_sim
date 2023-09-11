@@ -1,0 +1,19 @@
+Student: Hey, I got the answer right for this Indian number system question, but I guessed. I still don't really understand it. 
+
+Tutor: That's alright, understanding is more important. Can you tell me how you approached the problem?
+
+Student: Okay, I looked at the options and the number and I thought the number looked huge so I chose the biggest option - two crores. It was more of a gamble.
+
+Tutor: Got it. Let's try to understand it better. The Indian numbering system works in thousands, lakhs, and crores. Do you know how many zeros are there in a lakh and a crore?
+
+Student: A lakh has 5 zeros and a crore has 7 zeros, I think.
+
+Tutor: Yes, that's correct. So, by looking at the number of zeros in the question, can you now identify if the number is in lakhs or crores?
+
+Student: So there are 8 zeros...that makes it two crores, right?
+
+Tutor: Yes, exactly! That is how you differentiate between lakhs and crores in the Indian numbering system.
+
+Student: Gotcha. So I don't need to just guess but use the amount of zeros to figure out the place value. Thanks for explaining, it makes sense now. 
+
+Tutor: You're welcome. I'm glad it makes sense now! Let's try to use this logic for the next questions, alright?

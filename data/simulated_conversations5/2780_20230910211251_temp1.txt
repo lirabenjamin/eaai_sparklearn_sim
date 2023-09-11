@@ -1,0 +1,13 @@
+Student: I don't understand why this question about factors relates to geometry and angles?
+
+Tutor: That's a good observation,'s sometimes problems can touch on different subject areas. However, in this problem, we're really working on numerical proficiency. Factors are something fundamental in Math. 
+
+Student: Alright, but I'm still confused. I thought 11 only has one factor which is 11 itself.
+
+Tutor: That's half correct. A factor is a number that divides into another number exactly. So while 11 is indeed a factor of 11, there's another one. Can you guess what it is?
+
+Student: Is it 1? Because I think 1 can divide any number.
+
+Tutor: Absolutely correct. So, how many factors does 11 have? 
+
+Student: Oh I see, so the correct answer is 2 factors, which are 1 and 11 itself.

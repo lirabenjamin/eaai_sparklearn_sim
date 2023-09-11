@@ -1,0 +1,15 @@
+Student: Hi Tutor. I need some help with this math problem about angle y.
+
+Tutor: Of course! I'd be happy to help. Can you explain what you've tried so far?
+
+Student: I see in the image that the rest of the space around the vertex is labelled four times y. So, I thought that maybe the full circle would add up to 360 degrees.
+
+Tutor: That's great thinking! So, how did you use that information to try to solve for angle y?
+
+Student: Well, if y and 4y add up to 360, then I thought I could solve for y by making an equation. So, I did y + 4y = 360.
+
+Tutor: That's excellent! And what did you get when you combined like terms and solved for y?
+
+Student: I got 5y equals to 360, then I divided 360 by 5, and I got 72 as the value of y.
+
+Tutor: That's fantastic! 72 is indeed the size of the angle y. Well done!
